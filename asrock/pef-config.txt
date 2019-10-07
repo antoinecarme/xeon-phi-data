@@ -1,0 +1,3814 @@
+Section PEF_Conf
+	## Possible values: Yes/No
+	Enable_PEF                                    Yes
+	## Possible values: Yes/No
+	Enable_PEF_Event_Messages                     No
+	## Possible values: Yes/No
+	Enable_PEF_Startup_Delay                      No
+	## Possible values: Yes/No
+	Enable_PEF_Alert_Startup_Delay                No
+	## Possible values: Yes/No
+	Enable_Alert_Action                           Yes
+	## Possible values: Yes/No
+	Enable_Power_Down_Action                      Yes
+	## Possible values: Yes/No
+	Enable_Reset_Action                           Yes
+	## Possible values: Yes/No
+	Enable_Power_Cycle_Action                     Yes
+	## Possible values: Yes/No
+	Enable_OEM_Action                             Yes
+	## Possible values: Yes/No
+	Enable_Diagnostic_Interrupt                   No
+	## Give value in seconds
+	Startup_Delay                                 0
+	## Give value in seconds
+	Alert_Startup_Delay                           0
+EndSection
+Section Community_String
+	## Give valid string
+	Community_String                              AMI
+EndSection
+Section Lan_Alert_Destination_0
+	## Possible values: PET_Trap/OEM1/OEM2
+	Alert_Destination_Type                        PET_Trap
+	## Possible values: Yes/No
+	Alert_Acknowledge                             No
+	## Give valid unsigned number in seconds
+	Alert_Acknowledge_Timeout                     0
+	## Give valid unsigned number
+	Alert_Retries                                 0
+	## Possible values: Default/Backup
+	Alert_Gateway                                 Default
+	## Give valid IP address
+	Alert_IP_Address                              0.0.0.0
+	## Give valid MAC address
+	Alert_MAC_Address                             00:00:00:00:00:00
+EndSection
+Section Lan_Alert_Destination_1
+	## Possible values: PET_Trap/OEM1/OEM2
+	Alert_Destination_Type                        PET_Trap
+	## Possible values: Yes/No
+	Alert_Acknowledge                             No
+	## Give valid unsigned number in seconds
+	Alert_Acknowledge_Timeout                     0
+	## Give valid unsigned number
+	Alert_Retries                                 0
+	## Possible values: Default/Backup
+	Alert_Gateway                                 Default
+	## Give valid IP address
+	Alert_IP_Address                              0.0.0.0
+	## Give valid MAC address
+	Alert_MAC_Address                             00:00:00:00:00:00
+EndSection
+Section Lan_Alert_Destination_2
+	## Possible values: PET_Trap/OEM1/OEM2
+	Alert_Destination_Type                        PET_Trap
+	## Possible values: Yes/No
+	Alert_Acknowledge                             No
+	## Give valid unsigned number in seconds
+	Alert_Acknowledge_Timeout                     0
+	## Give valid unsigned number
+	Alert_Retries                                 0
+	## Possible values: Default/Backup
+	Alert_Gateway                                 Default
+	## Give valid IP address
+	Alert_IP_Address                              0.0.0.0
+	## Give valid MAC address
+	Alert_MAC_Address                             00:00:00:00:00:00
+EndSection
+Section Lan_Alert_Destination_3
+	## Possible values: PET_Trap/OEM1/OEM2
+	Alert_Destination_Type                        PET_Trap
+	## Possible values: Yes/No
+	Alert_Acknowledge                             No
+	## Give valid unsigned number in seconds
+	Alert_Acknowledge_Timeout                     0
+	## Give valid unsigned number
+	Alert_Retries                                 0
+	## Possible values: Default/Backup
+	Alert_Gateway                                 Default
+	## Give valid IP address
+	Alert_IP_Address                              0.0.0.0
+	## Give valid MAC address
+	Alert_MAC_Address                             00:00:00:00:00:00
+EndSection
+Section Lan_Alert_Destination_4
+	## Possible values: PET_Trap/OEM1/OEM2
+	Alert_Destination_Type                        PET_Trap
+	## Possible values: Yes/No
+	Alert_Acknowledge                             No
+	## Give valid unsigned number in seconds
+	Alert_Acknowledge_Timeout                     0
+	## Give valid unsigned number
+	Alert_Retries                                 0
+	## Possible values: Default/Backup
+	Alert_Gateway                                 Default
+	## Give valid IP address
+	Alert_IP_Address                              0.0.0.0
+	## Give valid MAC address
+	Alert_MAC_Address                             00:00:00:00:00:00
+EndSection
+Section Lan_Alert_Destination_5
+	## Possible values: PET_Trap/OEM1/OEM2
+	Alert_Destination_Type                        PET_Trap
+	## Possible values: Yes/No
+	Alert_Acknowledge                             No
+	## Give valid unsigned number in seconds
+	Alert_Acknowledge_Timeout                     0
+	## Give valid unsigned number
+	Alert_Retries                                 0
+	## Possible values: Default/Backup
+	Alert_Gateway                                 Default
+	## Give valid IP address
+	Alert_IP_Address                              0.0.0.0
+	## Give valid MAC address
+	Alert_MAC_Address                             00:00:00:00:00:00
+EndSection
+Section Lan_Alert_Destination_6
+	## Possible values: PET_Trap/OEM1/OEM2
+	Alert_Destination_Type                        PET_Trap
+	## Possible values: Yes/No
+	Alert_Acknowledge                             No
+	## Give valid unsigned number in seconds
+	Alert_Acknowledge_Timeout                     0
+	## Give valid unsigned number
+	Alert_Retries                                 0
+	## Possible values: Default/Backup
+	Alert_Gateway                                 Default
+	## Give valid IP address
+	Alert_IP_Address                              0.0.0.0
+	## Give valid MAC address
+	Alert_MAC_Address                             00:00:00:00:00:00
+EndSection
+Section Lan_Alert_Destination_7
+	## Possible values: PET_Trap/OEM1/OEM2
+	Alert_Destination_Type                        PET_Trap
+	## Possible values: Yes/No
+	Alert_Acknowledge                             No
+	## Give valid unsigned number in seconds
+	Alert_Acknowledge_Timeout                     0
+	## Give valid unsigned number
+	Alert_Retries                                 0
+	## Possible values: Default/Backup
+	Alert_Gateway                                 Default
+	## Give valid IP address
+	Alert_IP_Address                              0.0.0.0
+	## Give valid MAC address
+	Alert_MAC_Address                             00:00:00:00:00:00
+EndSection
+Section Lan_Alert_Destination_8
+	## Possible values: PET_Trap/OEM1/OEM2
+	Alert_Destination_Type                        PET_Trap
+	## Possible values: Yes/No
+	Alert_Acknowledge                             No
+	## Give valid unsigned number in seconds
+	Alert_Acknowledge_Timeout                     0
+	## Give valid unsigned number
+	Alert_Retries                                 0
+	## Possible values: Default/Backup
+	Alert_Gateway                                 Default
+	## Give valid IP address
+	Alert_IP_Address                              0.0.0.0
+	## Give valid MAC address
+	Alert_MAC_Address                             00:00:00:00:00:00
+EndSection
+Section Lan_Alert_Destination_9
+	## Possible values: PET_Trap/OEM1/OEM2
+	Alert_Destination_Type                        PET_Trap
+	## Possible values: Yes/No
+	Alert_Acknowledge                             No
+	## Give valid unsigned number in seconds
+	Alert_Acknowledge_Timeout                     0
+	## Give valid unsigned number
+	Alert_Retries                                 0
+	## Possible values: Default/Backup
+	Alert_Gateway                                 Default
+	## Give valid IP address
+	Alert_IP_Address                              0.0.0.0
+	## Give valid MAC address
+	Alert_MAC_Address                             00:00:00:00:00:00
+EndSection
+Section Lan_Alert_Destination_10
+	## Possible values: PET_Trap/OEM1/OEM2
+	Alert_Destination_Type                        PET_Trap
+	## Possible values: Yes/No
+	Alert_Acknowledge                             No
+	## Give valid unsigned number in seconds
+	Alert_Acknowledge_Timeout                     0
+	## Give valid unsigned number
+	Alert_Retries                                 0
+	## Possible values: Default/Backup
+	Alert_Gateway                                 Default
+	## Give valid IP address
+	Alert_IP_Address                              0.0.0.0
+	## Give valid MAC address
+	Alert_MAC_Address                             00:00:00:00:00:00
+EndSection
+Section Lan_Alert_Destination_11
+	## Possible values: PET_Trap/OEM1/OEM2
+	Alert_Destination_Type                        PET_Trap
+	## Possible values: Yes/No
+	Alert_Acknowledge                             No
+	## Give valid unsigned number in seconds
+	Alert_Acknowledge_Timeout                     0
+	## Give valid unsigned number
+	Alert_Retries                                 0
+	## Possible values: Default/Backup
+	Alert_Gateway                                 Default
+	## Give valid IP address
+	Alert_IP_Address                              0.0.0.0
+	## Give valid MAC address
+	Alert_MAC_Address                             00:00:00:00:00:00
+EndSection
+Section Lan_Alert_Destination_12
+	## Possible values: PET_Trap/OEM1/OEM2
+	Alert_Destination_Type                        PET_Trap
+	## Possible values: Yes/No
+	Alert_Acknowledge                             No
+	## Give valid unsigned number in seconds
+	Alert_Acknowledge_Timeout                     0
+	## Give valid unsigned number
+	Alert_Retries                                 0
+	## Possible values: Default/Backup
+	Alert_Gateway                                 Default
+	## Give valid IP address
+	Alert_IP_Address                              0.0.0.0
+	## Give valid MAC address
+	Alert_MAC_Address                             00:00:00:00:00:00
+EndSection
+Section Lan_Alert_Destination_13
+	## Possible values: PET_Trap/OEM1/OEM2
+	Alert_Destination_Type                        PET_Trap
+	## Possible values: Yes/No
+	Alert_Acknowledge                             No
+	## Give valid unsigned number in seconds
+	Alert_Acknowledge_Timeout                     0
+	## Give valid unsigned number
+	Alert_Retries                                 0
+	## Possible values: Default/Backup
+	Alert_Gateway                                 Default
+	## Give valid IP address
+	Alert_IP_Address                              0.0.0.0
+	## Give valid MAC address
+	Alert_MAC_Address                             00:00:00:00:00:00
+EndSection
+Section Lan_Alert_Destination_14
+	## Possible values: PET_Trap/OEM1/OEM2
+	Alert_Destination_Type                        PET_Trap
+	## Possible values: Yes/No
+	Alert_Acknowledge                             No
+	## Give valid unsigned number in seconds
+	Alert_Acknowledge_Timeout                     0
+	## Give valid unsigned number
+	Alert_Retries                                 0
+	## Possible values: Default/Backup
+	Alert_Gateway                                 Default
+	## Give valid IP address
+	Alert_IP_Address                              0.0.0.0
+	## Give valid MAC address
+	Alert_MAC_Address                             00:00:00:00:00:00
+EndSection
+Section Lan_Alert_Destination_15
+	## Possible values: PET_Trap/OEM1/OEM2
+	Alert_Destination_Type                        PET_Trap
+	## Possible values: Yes/No
+	Alert_Acknowledge                             No
+	## Give valid unsigned number in seconds
+	Alert_Acknowledge_Timeout                     0
+	## Give valid unsigned number
+	Alert_Retries                                 0
+	## Possible values: Default/Backup
+	Alert_Gateway                                 Default
+	## Give valid IP address
+	Alert_IP_Address                              0.0.0.0
+	## Give valid MAC address
+	Alert_MAC_Address                             00:00:00:00:00:00
+EndSection
+Section Alert_String_0
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_1
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_2
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_3
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_4
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_5
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_6
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_7
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_8
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_9
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_10
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_11
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_12
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_13
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_14
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_15
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_16
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_17
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_18
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_19
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_20
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_21
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_22
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_23
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_24
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_25
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_26
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_27
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_28
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_29
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_30
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_31
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_32
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_33
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_34
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_35
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_36
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_37
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_38
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_39
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_String_40
+	## Give valid number
+	Event_Filter_Number                           0
+	## Give valid number
+	Alert_String_Set                              0
+	## Give string. Max 64 chars.
+	Alert_String                                  
+EndSection
+Section Alert_Policy_1
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_2
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_3
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_4
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_5
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_6
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_7
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_8
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_9
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_10
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_11
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_12
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_13
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_14
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_15
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_16
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_17
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_18
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_19
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_20
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_21
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_22
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_23
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_24
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_25
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_26
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_27
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_28
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_29
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_30
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_31
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_32
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_33
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_34
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_35
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_36
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_37
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_38
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_39
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_40
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_41
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_42
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_43
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_44
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_45
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_46
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_47
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_48
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_49
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_50
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_51
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_52
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_53
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_54
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_55
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_56
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_57
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_58
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_59
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Alert_Policy_60
+	## Possible values: Always_Send_To_This_Destination/Proceed_To_Next_Entry/Do_Not_Proceed_Any_More_Entries/Proceed_To_Next_Entry_Different_Channel/Proceed_To_Next_Entry_Different_Destination_Type
+	Policy_Type                                   Always_Send_To_This_Destination
+	## Possible values: Yes/No
+	Policy_Enabled                                No
+	## Give a valid number
+	Policy_Number                                 0
+	## Give a valid number
+	Destination_Selector                          0
+	## Give a valid number (LAN = 1, 8)
+	Channel_Number                                0
+	## Give a valid number
+	Alert_String_Set_Selector                     0
+	## Possible values: Yes/No
+	Event_Specific_Alert_String                   No
+EndSection
+Section Event_Filter_1
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Manufacturer_Pre_Configured
+	## Possible values: Yes/No
+	Enable_Filter                                 Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           1
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0xFF
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0xFF
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Any
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0xFF
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0xFF
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0xFFFF
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_2
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Manufacturer_Pre_Configured
+	## Possible values: Yes/No
+	Enable_Filter                                 Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           2
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0xFF
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0xFF
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Any
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0xFF
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0xFF
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0xFFFF
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_3
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Manufacturer_Pre_Configured
+	## Possible values: Yes/No
+	Enable_Filter                                 Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           3
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0xFF
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0xFF
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Any
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0xFF
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0xFF
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0xFFFF
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_4
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Manufacturer_Pre_Configured
+	## Possible values: Yes/No
+	Enable_Filter                                 Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           4
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0xFF
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0xFF
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Any
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0xFF
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0xFF
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0xFFFF
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_5
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Manufacturer_Pre_Configured
+	## Possible values: Yes/No
+	Enable_Filter                                 Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           5
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0xFF
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0xFF
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Any
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0xFF
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0xFF
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0xFFFF
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_6
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Manufacturer_Pre_Configured
+	## Possible values: Yes/No
+	Enable_Filter                                 Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           6
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0xFF
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0xFF
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Any
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0xFF
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0xFF
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0xFFFF
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_7
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Manufacturer_Pre_Configured
+	## Possible values: Yes/No
+	Enable_Filter                                 Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           7
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0xFF
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0xFF
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Any
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0xFF
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0xFF
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0xFFFF
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_8
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Manufacturer_Pre_Configured
+	## Possible values: Yes/No
+	Enable_Filter                                 Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           8
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0xFF
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0xFF
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Any
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0xFF
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0xFF
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0xFFFF
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_9
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Manufacturer_Pre_Configured
+	## Possible values: Yes/No
+	Enable_Filter                                 Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           9
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0xFF
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0xFF
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Any
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0xFF
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0xFF
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0xFFFF
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_10
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Manufacturer_Pre_Configured
+	## Possible values: Yes/No
+	Enable_Filter                                 Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           10
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0xFF
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0xFF
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Any
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0xFF
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0xFF
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0xFFFF
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_11
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Manufacturer_Pre_Configured
+	## Possible values: Yes/No
+	Enable_Filter                                 Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           11
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0xFF
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0xFF
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Any
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0xFF
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0xFF
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0xFFFF
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_12
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Manufacturer_Pre_Configured
+	## Possible values: Yes/No
+	Enable_Filter                                 Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           12
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0xFF
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0xFF
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Any
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0xFF
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0xFF
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0xFFFF
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_13
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Manufacturer_Pre_Configured
+	## Possible values: Yes/No
+	Enable_Filter                                 Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           13
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0xFF
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0xFF
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Any
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0xFF
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0xFF
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0xFFFF
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_14
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Manufacturer_Pre_Configured
+	## Possible values: Yes/No
+	Enable_Filter                                 Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           14
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0xFF
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0xFF
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Any
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0xFF
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0xFF
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0xFFFF
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_15
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Manufacturer_Pre_Configured
+	## Possible values: Yes/No
+	Enable_Filter                                 Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       Yes
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           15
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0xFF
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0xFF
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Any
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0xFF
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0xFF
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0xFFFF
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_16
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_17
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_18
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_19
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_20
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_21
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_22
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_23
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_24
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_25
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_26
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_27
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_28
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_29
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_30
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_31
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_32
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_33
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_34
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_35
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_36
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_37
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_38
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_39
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection
+Section Event_Filter_40
+	## Possible values: Manufacturer_Pre_Configured/Software_Configurable/Reserved1/Reserved3
+	Filter_Type                                   Software_Configurable
+	## Possible values: Yes/No
+	Enable_Filter                                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Alert                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Off                 No
+	## Possible values: Yes/No
+	Event_Filter_Action_Reset                     No
+	## Possible values: Yes/No
+	Event_Filter_Action_Power_Cycle               No
+	## Possible values: Yes/No
+	Event_Filter_Action_Oem                       No
+	## Possible values: Yes/No
+	Event_Filter_Action_Diagnostic_Interrupt      No
+	## Possible values: Yes/No
+	Event_Filter_Action_Group_Control_Operation   No
+	## Give a valid number
+	Alert_Policy_Number                           0
+	## Give a valid number
+	Group_Control_Selector                        0
+	## Possible values: Unspecified/Monitor/Information/OK/Non_Critical/Critical/Non_Recoverable
+	Event_Severity                                Unspecified
+	## Specify a hex Slave Address or Software ID from Event Message or 0xFF to Match Any
+	Generator_Id_Byte_1                           0x00
+	## Specify a hex Channel Number or LUN to match or 0xFF to Match Any
+	Generator_Id_Byte_2                           0x00
+	## Specify a Sensor Type, via hex or see MAN page for string options
+	Sensor_Type                                   Reserved
+	## Specify a Sensor Number or 0xFF to Match Any
+	Sensor_Number                                 0x00
+	## Specify a Event/Reading Type Number or 0xFF to Match Any
+	Event_Trigger                                 0x00
+	## Give a valid number
+	Event_Data1_Offset_Mask                       0x00
+	## Give a valid number
+	Event_Data1_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data1_Compare1                          0x00
+	## Give a valid number
+	Event_Data1_Compare2                          0x00
+	## Give a valid number
+	Event_Data2_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data2_Compare1                          0x00
+	## Give a valid number
+	Event_Data2_Compare2                          0x00
+	## Give a valid number
+	Event_Data3_AND_Mask                          0x00
+	## Give a valid number
+	Event_Data3_Compare1                          0x00
+	## Give a valid number
+	Event_Data3_Compare2                          0x00
+EndSection

@@ -1,0 +1,91 @@
+#
+# Section Chassis_Front_Panel_Buttons Comments 
+#
+# The following configuration options are for enabling or disabling button 
+# functionality on the chassis. Button may refer to a pushbutton, switch, or 
+# other front panel control built into the system chassis. 
+#
+# The value of the below may not be able to be checked out. Therefore we 
+# recommend the user configure all four fields rather than a subset of them, 
+# otherwise some assumptions on configure may be made. 
+#
+Section Chassis_Front_Panel_Buttons
+	## Possible values: Yes/No
+	Enable_Standby_Button_For_Entering_Standby    Yes
+	## Possible values: Yes/No
+	Enable_Diagnostic_Interrupt_Button            Yes
+	## Possible values: Yes/No
+	Enable_Reset_Button                           Yes
+	## Possible values: Yes/No
+	Enable_Power_Off_Button_For_Power_Off_Only    Yes
+EndSection
+#
+# Section Chassis_Power_Conf Comments 
+#
+# The following configuration options are for configuring chassis power 
+# behavior. 
+#
+# The "Power_Restore_Policy" determines the behavior of the machine when AC 
+# power returns after a power loss. The behavior can be set to always power on 
+# the machine ("On_State_AC_Apply"), power off the machine 
+# ("Off_State_AC_Apply"), or return the power to the state that existed before 
+# the power loss ("Restore_State_AC_Apply"). 
+#
+# The "Power_Cycle_Interval" determines the time the system will be powered down 
+# following a power cycle command. 
+#
+Section Chassis_Power_Conf
+	## Possible values: Off_State_AC_Apply/Restore_State_AC_Apply/On_State_AC_Apply
+	Power_Restore_Policy                          Off_State_AC_Apply
+	## Give value in seconds
+	## Power_Cycle_Interval                       
+EndSection
+#
+# Section Chassis_Boot_Flags Comments 
+#
+# The following configuration options are for configuring chassis boot behavior. 
+# Please note that some fields may apply to all future boots while some may only 
+# apply to the next system boot. 
+#
+# "Boot_Flags_Persistent" determines if flags apply to the next boot only or all 
+# future boots. 
+#
+# "Boot_Device" allows the user to configure which device the BIOS should boot 
+# off of. Most users may wish to select NO-OVERRIDE to select the configuration 
+# currently determined by the BIOS. Note that the configuration value BIOS-SETUP 
+# refers to booting *into* the BIOS Setup, not from it. FLOPPY may refer to any 
+# type of removable media. "Device_Instance_Selector" may be be used to select a 
+# specific device instance for booting. 
+#
+Section Chassis_Boot_Flags
+	## Possible values: Yes/No (Yes = All Future Boots; No = Next Boot Only)
+	Boot_Flags_Persistent                         No
+	## Possible values: PC-COMPATIBLE/EFI
+	BIOS_Boot_Type                                PC-COMPATIBLE
+	## Possible values: Yes/No (Only applies to Next Boot)
+	CMOS_Clear                                    No
+	## Possible values: Yes/No (Only applies to Next Boot)
+	Lock_Keyboard                                 No
+	## Possible values: Yes/No (Only applies to Next Boot)
+	Screen_Blank                                  No
+	## Possible values: NO-OVERRIDE/PXE/HARD-DRIVE/HARD-DRIVE-SAFE-MODE/
+	##                  DIAGNOSTIC_PARTITION/CD-DVD/BIOS-SETUP/REMOTE-FLOPPY
+	##                  PRIMARY-REMOTE-MEDIA/REMOTE-CD-DVD/REMOTE-HARD-DRIVE/FLOPPY
+	Boot_Device                                   NO-OVERRIDE
+	## Possible values: None/Internal-{1-15}/External-{1-15} (e.g. Internal-5)
+	Device_Instance_Selector                      None
+	## Possible values: Yes/No
+	Lock_Out_Reset_Button                         No
+	## Possible values: Yes/No
+	Lock_Out_Power_Button                         No
+	## Possible values: Yes/No
+	Lock_Out_Sleep_Button                         No
+	## Possible values: DEFAULT/QUIET/VERBOSE
+	Firmware_Bios_Verbosity                       DEFAULT
+	## Possible values: Yes/No
+	Force_Progress_Event_Traps                    No
+	## Possible values: Yes/No
+	User_Password_Bypass                          No
+	## Possible values: BIOS-SETTING/SUPPRESS/ENABLE
+	Console_Redirection                           BIOS-SETTING
+EndSection

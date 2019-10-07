@@ -1,0 +1,1130 @@
+00:00.0 Host bridge: Intel Corporation Device 783c (rev 10)
+	Subsystem: ASRock Incorporation Device 780e
+	Flags: fast devsel, NUMA node 0
+	Capabilities: [90] Express Root Port (Slot-), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [144] Vendor Specific Information: ID=0004 Rev=1 Len=03c <?>
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express <?>
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+
+00:00.2 PCI bridge: Intel Corporation Device 7808 (rev 10) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, IRQ 25, NUMA node 0
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	I/O behind bridge: 0000e000-0000efff [size=4K]
+	Memory behind bridge: fb100000-fb1fffff [size=1M]
+	Prefetchable memory behind bridge: 0000200000000000-00002000000fffff [size=1M]
+	Capabilities: [40] Subsystem: ASRock Incorporation Device 7808
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+	Capabilities: [90] Express Root Port (Slot+), MSI 00
+	Capabilities: [e0] Power Management version 3
+	Capabilities: [100] Vendor Specific Information: ID=0002 Rev=0 Len=00c <?>
+	Capabilities: [110] Access Control Services
+	Capabilities: [148] Advanced Error Reporting
+	Capabilities: [1d0] Vendor Specific Information: ID=0003 Rev=1 Len=00a <?>
+	Capabilities: [250] Secondary PCI Express <?>
+	Capabilities: [280] Vendor Specific Information: ID=0005 Rev=3 Len=018 <?>
+	Capabilities: [298] Vendor Specific Information: ID=0007 Rev=0 Len=024 <?>
+	Kernel driver in use: pcieport
+
+00:05.0 System peripheral: Intel Corporation Device 7810 (rev 10)
+	Subsystem: ASRock Incorporation Device 7810
+	Flags: fast devsel, NUMA node 0
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Null
+
+00:05.2 System peripheral: Intel Corporation Device 7812 (rev 10)
+	Subsystem: ASRock Incorporation Device 7812
+	Flags: fast devsel, NUMA node 0
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+00:05.4 PIC: Intel Corporation Device 7813 (rev 10) (prog-if 20 [IO(X)-APIC])
+	Subsystem: ASRock Incorporation Device 7813
+	Flags: bus master, fast devsel, latency 0, NUMA node 0
+	Memory at fb219000 (32-bit, non-prefetchable) [size=4K]
+	Capabilities: [44] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [e0] Power Management version 3
+
+00:05.6 Performance counters: Intel Corporation Device 7814 (rev 10)
+	Subsystem: ASRock Incorporation Device 7814
+	Flags: fast devsel, NUMA node 0
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+
+00:08.0 System peripheral: Intel Corporation Device 781a (rev 10)
+	Subsystem: ASRock Incorporation Device 781a
+	Flags: fast devsel, NUMA node 0
+
+00:08.1 Performance counters: Intel Corporation Device 781b (rev 10)
+	Subsystem: ASRock Incorporation Device 781b
+	Flags: fast devsel, NUMA node 0
+
+00:08.2 System peripheral: Intel Corporation Device 781c (rev 10)
+	Subsystem: ASRock Incorporation Device 781c
+	Flags: fast devsel, NUMA node 0
+
+00:11.0 Unassigned class [ff00]: Intel Corporation C610/X99 series chipset SPSR (rev 05)
+	Subsystem: ASRock Incorporation C610/X99 series chipset SPSR
+	Flags: bus master, fast devsel, latency 0, NUMA node 0
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [80] Power Management version 3
+
+00:11.4 SATA controller: Intel Corporation C610/X99 series chipset sSATA Controller [AHCI mode] (rev 05) (prog-if 01 [AHCI 1.0])
+	Subsystem: ASRock Incorporation C610/X99 series chipset sSATA Controller [AHCI mode]
+	Flags: bus master, 66MHz, medium devsel, latency 0, IRQ 37, NUMA node 0
+	I/O ports at f130 [size=8]
+	I/O ports at f120 [size=4]
+	I/O ports at f110 [size=8]
+	I/O ports at f100 [size=4]
+	I/O ports at f040 [size=32]
+	Memory at fb218000 (32-bit, non-prefetchable) [size=2K]
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+	Capabilities: [70] Power Management version 3
+	Capabilities: [a8] SATA HBA v1.0
+	Kernel driver in use: ahci
+	Kernel modules: ahci
+
+00:14.0 USB controller: Intel Corporation C610/X99 series chipset USB xHCI Host Controller (rev 05) (prog-if 30 [XHCI])
+	Subsystem: ASRock Incorporation C610/X99 series chipset USB xHCI Host Controller
+	Flags: bus master, medium devsel, latency 0, IRQ 38, NUMA node 0
+	Memory at fb200000 (64-bit, non-prefetchable) [size=64K]
+	Capabilities: [70] Power Management version 2
+	Capabilities: [80] MSI: Enable+ Count=1/8 Maskable- 64bit+
+	Kernel driver in use: xhci_hcd
+	Kernel modules: xhci_pci
+
+00:16.0 Communication controller: Intel Corporation C610/X99 series chipset MEI Controller #1 (rev 05)
+	Subsystem: ASRock Incorporation C610/X99 series chipset MEI Controller
+	Flags: bus master, fast devsel, latency 0, IRQ 11, NUMA node 0
+	Memory at fb217000 (64-bit, non-prefetchable) [size=16]
+	Capabilities: [50] Power Management version 3
+	Capabilities: [8c] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Kernel modules: mei_me
+
+00:16.1 Communication controller: Intel Corporation C610/X99 series chipset MEI Controller #2 (rev 05)
+	Subsystem: ASRock Incorporation C610/X99 series chipset MEI Controller
+	Flags: bus master, fast devsel, latency 0, IRQ 10, NUMA node 0
+	Memory at fb216000 (64-bit, non-prefetchable) [size=16]
+	Capabilities: [50] Power Management version 3
+	Capabilities: [8c] MSI: Enable- Count=1/1 Maskable- 64bit+
+
+00:1a.0 USB controller: Intel Corporation C610/X99 series chipset USB Enhanced Host Controller #2 (rev 05) (prog-if 20 [EHCI])
+	Subsystem: ASRock Incorporation C610/X99 series chipset USB Enhanced Host Controller
+	Flags: medium devsel, IRQ 18, NUMA node 0
+	Memory at fb214000 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: [50] Power Management version 2
+	Capabilities: [58] Debug port: BAR=1 offset=00a0
+	Capabilities: [98] PCI Advanced Features
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:1c.0 PCI bridge: Intel Corporation C610/X99 series chipset PCI Express Root Port #1 (rev d5) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, IRQ 26, NUMA node 0
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=0
+	I/O behind bridge: None
+	Memory behind bridge: None
+	Prefetchable memory behind bridge: None
+	Capabilities: [40] Express Root Port (Slot-), MSI 00
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+	Capabilities: [90] Subsystem: ASRock Incorporation C610/X99 series chipset PCI Express Root Port
+	Capabilities: [a0] Power Management version 3
+	Kernel driver in use: pcieport
+
+00:1c.1 PCI bridge: Intel Corporation C610/X99 series chipset PCI Express Root Port #2 (rev d5) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, IRQ 27, NUMA node 0
+	Bus: primary=00, secondary=03, subordinate=04, sec-latency=0
+	I/O behind bridge: 0000d000-0000dfff [size=4K]
+	Memory behind bridge: fa000000-fb0fffff [size=17M]
+	Prefetchable memory behind bridge: None
+	Capabilities: [40] Express Root Port (Slot+), MSI 00
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+	Capabilities: [90] Subsystem: ASRock Incorporation C610/X99 series chipset PCI Express Root Port
+	Capabilities: [a0] Power Management version 3
+	Kernel driver in use: pcieport
+
+00:1d.0 USB controller: Intel Corporation C610/X99 series chipset USB Enhanced Host Controller #1 (rev 05) (prog-if 20 [EHCI])
+	Subsystem: ASRock Incorporation C610/X99 series chipset USB Enhanced Host Controller
+	Flags: medium devsel, IRQ 18, NUMA node 0
+	Memory at fb213000 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: [50] Power Management version 2
+	Capabilities: [58] Debug port: BAR=1 offset=00a0
+	Capabilities: [98] PCI Advanced Features
+	Kernel driver in use: ehci-pci
+	Kernel modules: ehci_pci
+
+00:1f.0 ISA bridge: Intel Corporation C610/X99 series chipset LPC Controller (rev 05)
+	Subsystem: ASRock Incorporation C610/X99 series chipset LPC Controller
+	Flags: bus master, medium devsel, latency 0, NUMA node 0
+	Capabilities: [e0] Vendor Specific Information: Len=0c <?>
+	Kernel driver in use: lpc_ich
+	Kernel modules: lpc_ich
+
+00:1f.2 SATA controller: Intel Corporation C610/X99 series chipset 6-Port SATA Controller [AHCI mode] (rev 05) (prog-if 01 [AHCI 1.0])
+	Subsystem: ASRock Incorporation C610/X99 series chipset 6-Port SATA Controller [AHCI mode]
+	Flags: bus master, 66MHz, medium devsel, latency 0, IRQ 49, NUMA node 0
+	I/O ports at f090 [size=8]
+	I/O ports at f080 [size=4]
+	I/O ports at f070 [size=8]
+	I/O ports at f060 [size=4]
+	I/O ports at f020 [size=32]
+	Memory at fb212000 (32-bit, non-prefetchable) [size=2K]
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+	Capabilities: [70] Power Management version 3
+	Capabilities: [a8] SATA HBA v1.0
+	Kernel driver in use: ahci
+	Kernel modules: ahci
+
+00:1f.3 SMBus: Intel Corporation C610/X99 series chipset SMBus Controller (rev 05)
+	Subsystem: ASRock Incorporation C610/X99 series chipset SMBus Controller
+	Flags: medium devsel, IRQ 18, NUMA node 0
+	Memory at fb211000 (64-bit, non-prefetchable) [size=256]
+	I/O ports at f000 [size=32]
+	Kernel driver in use: i801_smbus
+	Kernel modules: i2c_i801
+
+00:1f.6 Signal processing controller: Intel Corporation C610/X99 series chipset Thermal Subsystem (rev 05)
+	Subsystem: ASRock Incorporation C610/X99 series chipset Thermal Subsystem
+	Flags: bus master, fast devsel, latency 0, IRQ 5, NUMA node 0
+	Memory at fb210000 (64-bit, non-prefetchable) [size=4K]
+	Capabilities: [50] Power Management version 3
+	Capabilities: [80] MSI: Enable- Count=1/1 Maskable- 64bit-
+
+01:00.0 Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
+	Subsystem: ASRock Incorporation I350 Gigabit Network Connection
+	Physical Slot: 2
+	Flags: fast devsel, IRQ 24, NUMA node 0
+	Memory at fb120000 (32-bit, non-prefetchable) [size=128K]
+	I/O ports at e020 [size=32]
+	Memory at fb144000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable+ 64bit+
+	Capabilities: [70] MSI-X: Enable- Count=10 Masked-
+	Capabilities: [a0] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [140] Device Serial Number d0-50-99-ff-ff-d0-8e-ca
+	Capabilities: [150] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [160] Single Root I/O Virtualization (SR-IOV)
+	Capabilities: [1a0] Transaction Processing Hints
+	Capabilities: [1c0] Latency Tolerance Reporting
+	Capabilities: [1d0] Access Control Services
+	Kernel driver in use: igb
+	Kernel modules: igb
+
+01:00.1 Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
+	Subsystem: ASRock Incorporation I350 Gigabit Network Connection
+	Physical Slot: 2
+	Flags: bus master, fast devsel, latency 0, IRQ 24, NUMA node 0
+	Memory at fb100000 (32-bit, non-prefetchable) [size=128K]
+	I/O ports at e000 [size=32]
+	Memory at fb140000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable+ 64bit+
+	Capabilities: [70] MSI-X: Enable+ Count=10 Masked-
+	Capabilities: [a0] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [140] Device Serial Number d0-50-99-ff-ff-d0-8e-ca
+	Capabilities: [150] Alternative Routing-ID Interpretation (ARI)
+	Capabilities: [160] Single Root I/O Virtualization (SR-IOV)
+	Capabilities: [1a0] Transaction Processing Hints
+	Capabilities: [1d0] Access Control Services
+	Kernel driver in use: igb
+	Kernel modules: igb
+
+03:00.0 PCI bridge: ASPEED Technology, Inc. AST1150 PCI-to-PCI Bridge (rev 03) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, NUMA node 0
+	Bus: primary=03, secondary=04, subordinate=04, sec-latency=32
+	I/O behind bridge: 0000d000-0000dfff [size=4K]
+	Memory behind bridge: fa000000-fb0fffff [size=17M]
+	Prefetchable memory behind bridge: None
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [78] Power Management version 3
+	Capabilities: [80] Express PCI-Express to PCI/PCI-X Bridge, MSI 00
+	Capabilities: [a4] Subsystem: ASRock Incorporation AST1150 PCI-to-PCI Bridge
+	Capabilities: [100] Virtual Channel
+	Capabilities: [800] Advanced Error Reporting
+
+04:00.0 VGA compatible controller: ASPEED Technology, Inc. ASPEED Graphics Family (rev 30) (prog-if 00 [VGA controller])
+	Subsystem: ASRock Incorporation ASPEED Graphics Family
+	Flags: bus master, medium devsel, latency 0, IRQ 17, NUMA node 0
+	Memory at fa000000 (32-bit, non-prefetchable) [size=16M]
+	Memory at fb000000 (32-bit, non-prefetchable) [size=128K]
+	I/O ports at d000 [size=128]
+	[virtual] Expansion ROM at 000c0000 [disabled] [size=128K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/4 Maskable- 64bit+
+	Kernel driver in use: ast
+	Kernel modules: ast
+
+fe:08.0 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:08.1 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:08.2 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:08.3 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:08.4 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:08.5 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:08.6 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:08.7 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:09.0 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:09.1 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:09.2 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:09.3 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:09.4 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:09.5 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:09.6 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:09.7 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0a.0 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0a.1 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0a.2 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0a.3 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0a.4 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0a.5 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0a.6 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0a.7 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0b.0 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0b.1 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0b.2 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0b.3 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0b.4 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0b.5 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0b.6 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0b.7 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0c.0 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0c.1 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0c.2 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0c.3 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0c.4 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0c.5 System peripheral: Intel Corporation Device 782f (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:0e.0 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:0e.1 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:0e.2 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:0e.3 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:0e.4 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:0e.5 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:0e.6 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:0e.7 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:0f.0 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:0f.1 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:0f.2 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:0f.3 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:0f.4 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:0f.5 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:0f.6 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:0f.7 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:10.0 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:10.1 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:10.2 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:10.3 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:10.4 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:10.5 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:10.6 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:10.7 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:11.0 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:11.1 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:11.2 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:11.3 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:11.4 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:11.5 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:11.6 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:11.7 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:12.0 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:12.1 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:12.2 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:12.3 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:12.4 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:12.5 System peripheral: Intel Corporation Device 782c (rev 10)
+	Subsystem: ASRock Incorporation Device 782c
+	Flags: fast devsel
+
+fe:14.0 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:14.1 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:14.2 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:14.3 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:14.4 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:14.5 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:14.6 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:14.7 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:15.0 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:15.1 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:15.2 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:15.3 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:15.4 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:15.5 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:15.6 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:15.7 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:16.0 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:16.1 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:16.2 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:16.3 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:16.4 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:16.5 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:16.6 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:16.7 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:17.0 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:17.1 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:17.2 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:17.3 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:17.4 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:17.5 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:17.6 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:17.7 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:18.0 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:18.1 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:18.2 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:18.3 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:18.4 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:18.5 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+fe:1d.0 System peripheral: Intel Corporation Device 782a (rev 10)
+	Subsystem: ASRock Incorporation Device 782a
+	Flags: fast devsel
+
+fe:1d.1 System peripheral: Intel Corporation Device 782b (rev 10)
+	Subsystem: ASRock Incorporation Device 782b
+	Flags: fast devsel
+
+fe:1d.2 System peripheral: Intel Corporation Device 782e (rev 10)
+	Subsystem: ASRock Incorporation Device 782f
+	Flags: fast devsel
+
+fe:1d.3 System peripheral: Intel Corporation Device 782d (rev 10)
+	Subsystem: ASRock Incorporation Device 782d
+	Flags: fast devsel
+
+fe:1e.0 System peripheral: Intel Corporation Device 7820 (rev 10)
+	Subsystem: ASRock Incorporation Device 7820
+	Flags: fast devsel
+
+fe:1e.1 System peripheral: Intel Corporation Device 7821 (rev 10)
+	Subsystem: ASRock Incorporation Device 7821
+	Flags: fast devsel
+
+fe:1e.2 System peripheral: Intel Corporation Device 7822 (rev 10)
+	Subsystem: ASRock Incorporation Device 7822
+	Flags: fast devsel
+
+fe:1e.3 System peripheral: Intel Corporation Device 7823 (rev 10)
+	Subsystem: ASRock Incorporation Device 7823
+	Flags: fast devsel
+
+fe:1e.4 System peripheral: Intel Corporation Device 7824 (rev 10)
+	Subsystem: ASRock Incorporation Device 7824
+	Flags: fast devsel
+
+fe:1e.5 System peripheral: Intel Corporation Device 7825 (rev 10)
+	Subsystem: ASRock Incorporation Device 7825
+	Flags: fast devsel
+
+fe:1e.6 System peripheral: Intel Corporation Device 7826 (rev 10)
+	Subsystem: ASRock Incorporation Device 7826
+	Flags: fast devsel
+
+ff:08.0 System peripheral: Intel Corporation Device 7840 (rev 10)
+	Subsystem: ASRock Incorporation Device 7840
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+ff:08.1 System peripheral: Intel Corporation Device 7842 (rev 10)
+	Subsystem: ASRock Incorporation Device 7842
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+ff:08.2 System peripheral: Intel Corporation Device 7843 (rev 10)
+	Subsystem: ASRock Incorporation Device 7843
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+
+ff:08.3 System peripheral: Intel Corporation Device 7843 (rev 10)
+	Subsystem: ASRock Incorporation Device 7843
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+
+ff:08.4 System peripheral: Intel Corporation Device 7843 (rev 10)
+	Subsystem: ASRock Incorporation Device 7843
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+
+ff:09.0 System peripheral: Intel Corporation Device 7840 (rev 10)
+	Subsystem: ASRock Incorporation Device 7840
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+ff:09.1 System peripheral: Intel Corporation Device 7842 (rev 10)
+	Subsystem: ASRock Incorporation Device 7842
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+ff:09.2 System peripheral: Intel Corporation Device 7843 (rev 10)
+	Subsystem: ASRock Incorporation Device 7843
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+
+ff:09.3 System peripheral: Intel Corporation Device 7843 (rev 10)
+	Subsystem: ASRock Incorporation Device 7843
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+
+ff:09.4 System peripheral: Intel Corporation Device 7843 (rev 10)
+	Subsystem: ASRock Incorporation Device 7843
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+
+ff:0a.0 System peripheral: Intel Corporation Device 7841 (rev 10)
+	Subsystem: ASRock Incorporation Device 7841
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+
+ff:0a.1 System peripheral: Intel Corporation Device 7844 (rev 10)
+	Subsystem: ASRock Incorporation Device 7844
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+ff:0a.2 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+ff:0b.0 System peripheral: Intel Corporation Device 7841 (rev 10)
+	Subsystem: ASRock Incorporation Device 7841
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+
+ff:0b.1 System peripheral: Intel Corporation Device 7844 (rev 10)
+	Subsystem: ASRock Incorporation Device 7844
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+ff:0b.2 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+ff:0c.0 System peripheral: Intel Corporation Device 7816 (rev 10)
+	Subsystem: ASRock Incorporation Device 7816
+	Flags: fast devsel
+
+ff:0c.1 Performance counters: Intel Corporation Device 7817 (rev 10)
+	Subsystem: ASRock Incorporation Device 7817
+	Flags: fast devsel
+	Kernel driver in use: knl_uncore
+
+ff:0c.2 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+ff:0f.0 System peripheral: Intel Corporation Device 7833 (rev 10)
+	Subsystem: ASRock Incorporation Device 7833
+	Flags: fast devsel
+	Kernel driver in use: knl_uncore
+
+ff:0f.1 System peripheral: Intel Corporation Device 7839 (rev 10)
+	Subsystem: ASRock Incorporation Device 7839
+	Flags: fast devsel
+
+ff:0f.2 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+ff:10.0 System peripheral: Intel Corporation Device 7833 (rev 10)
+	Subsystem: ASRock Incorporation Device 7833
+	Flags: fast devsel
+	Kernel driver in use: knl_uncore
+
+ff:10.1 System peripheral: Intel Corporation Device 7839 (rev 10)
+	Subsystem: ASRock Incorporation Device 7839
+	Flags: fast devsel
+
+ff:10.2 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+ff:10.5 System peripheral: Intel Corporation Device 7848 (rev 10)
+	Flags: fast devsel
+
+ff:10.6 System peripheral: Intel Corporation Device 7848 (rev 10)
+	Flags: fast devsel
+
+ff:10.7 System peripheral: Intel Corporation Device 7848 (rev 10)
+	Flags: fast devsel
+
+ff:11.0 System peripheral: Intel Corporation Device 7833 (rev 10)
+	Subsystem: ASRock Incorporation Device 7833
+	Flags: fast devsel
+	Kernel driver in use: knl_uncore
+
+ff:11.1 System peripheral: Intel Corporation Device 7839 (rev 10)
+	Subsystem: ASRock Incorporation Device 7839
+	Flags: fast devsel
+
+ff:11.2 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+ff:11.5 System peripheral: Intel Corporation Device 7849 (rev 10)
+	Flags: fast devsel
+
+ff:11.6 System peripheral: Intel Corporation Device 7849 (rev 10)
+	Flags: fast devsel
+
+ff:11.7 System peripheral: Intel Corporation Device 7849 (rev 10)
+	Flags: fast devsel
+
+ff:12.0 System peripheral: Intel Corporation Device 7833 (rev 10)
+	Subsystem: ASRock Incorporation Device 7833
+	Flags: fast devsel
+	Kernel driver in use: knl_uncore
+
+ff:12.1 System peripheral: Intel Corporation Device 7839 (rev 10)
+	Subsystem: ASRock Incorporation Device 7839
+	Flags: fast devsel
+
+ff:12.2 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+ff:12.5 System peripheral: Intel Corporation Device 7848 (rev 10)
+	Flags: fast devsel
+
+ff:12.6 System peripheral: Intel Corporation Device 7848 (rev 10)
+	Flags: fast devsel
+
+ff:12.7 System peripheral: Intel Corporation Device 7848 (rev 10)
+	Flags: fast devsel
+
+ff:13.0 System peripheral: Intel Corporation Device 7833 (rev 10)
+	Subsystem: ASRock Incorporation Device 7833
+	Flags: fast devsel
+	Kernel driver in use: knl_uncore
+
+ff:13.1 System peripheral: Intel Corporation Device 7839 (rev 10)
+	Subsystem: ASRock Incorporation Device 7839
+	Flags: fast devsel
+
+ff:13.2 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+ff:13.5 System peripheral: Intel Corporation Device 7849 (rev 10)
+	Flags: fast devsel
+
+ff:13.6 System peripheral: Intel Corporation Device 7849 (rev 10)
+	Flags: fast devsel
+
+ff:13.7 System peripheral: Intel Corporation Device 7849 (rev 10)
+	Flags: fast devsel
+
+ff:14.0 System peripheral: Intel Corporation Device 7833 (rev 10)
+	Subsystem: ASRock Incorporation Device 7833
+	Flags: fast devsel
+	Kernel driver in use: knl_uncore
+
+ff:14.1 System peripheral: Intel Corporation Device 7839 (rev 10)
+	Subsystem: ASRock Incorporation Device 7839
+	Flags: fast devsel
+
+ff:14.2 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+ff:14.6 System peripheral: Intel Corporation Device 7845 (rev 10)
+	Flags: fast devsel
+
+ff:14.7 System peripheral: Intel Corporation Device 7846 (rev 10)
+	Flags: fast devsel
+
+ff:15.0 System peripheral: Intel Corporation Device 7833 (rev 10)
+	Subsystem: ASRock Incorporation Device 7833
+	Flags: fast devsel
+	Kernel driver in use: knl_uncore
+
+ff:15.1 System peripheral: Intel Corporation Device 7839 (rev 10)
+	Subsystem: ASRock Incorporation Device 7839
+	Flags: fast devsel
+
+ff:15.2 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+ff:15.6 System peripheral: Intel Corporation Device 7845 (rev 10)
+	Flags: fast devsel
+
+ff:15.7 System peripheral: Intel Corporation Device 7847 (rev 10)
+	Flags: fast devsel
+
+ff:16.0 System peripheral: Intel Corporation Device 7833 (rev 10)
+	Subsystem: ASRock Incorporation Device 7833
+	Flags: fast devsel
+	Kernel driver in use: knl_uncore
+
+ff:16.1 System peripheral: Intel Corporation Device 7839 (rev 10)
+	Subsystem: ASRock Incorporation Device 7839
+	Flags: fast devsel
+
+ff:16.2 System peripheral: Intel Corporation Device 781f (rev 10)
+	Subsystem: ASRock Incorporation Device 781f
+	Flags: fast devsel
+
+ff:18.0 System peripheral: Intel Corporation Device 7831 (rev 10)
+	Subsystem: ASRock Incorporation Device 7831
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+ff:18.1 System peripheral: Intel Corporation Device 7837 (rev 10)
+	Subsystem: ASRock Incorporation Device 7837
+	Flags: fast devsel
+
+ff:18.2 System peripheral: Intel Corporation Device 7835 (rev 10)
+	Subsystem: ASRock Incorporation Device 7835
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+
+ff:19.0 System peripheral: Intel Corporation Device 7831 (rev 10)
+	Subsystem: ASRock Incorporation Device 7831
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+ff:19.1 System peripheral: Intel Corporation Device 7837 (rev 10)
+	Subsystem: ASRock Incorporation Device 7837
+	Flags: fast devsel
+
+ff:19.2 System peripheral: Intel Corporation Device 7835 (rev 10)
+	Subsystem: ASRock Incorporation Device 7835
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+
+ff:1a.0 System peripheral: Intel Corporation Device 7831 (rev 10)
+	Subsystem: ASRock Incorporation Device 7831
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+ff:1a.1 System peripheral: Intel Corporation Device 7837 (rev 10)
+	Subsystem: ASRock Incorporation Device 7837
+	Flags: fast devsel
+
+ff:1a.2 System peripheral: Intel Corporation Device 7835 (rev 10)
+	Subsystem: ASRock Incorporation Device 7835
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+
+ff:1b.0 System peripheral: Intel Corporation Device 7831 (rev 10)
+	Subsystem: ASRock Incorporation Device 7831
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+ff:1b.1 System peripheral: Intel Corporation Device 7837 (rev 10)
+	Subsystem: ASRock Incorporation Device 7837
+	Flags: fast devsel
+
+ff:1b.2 System peripheral: Intel Corporation Device 7835 (rev 10)
+	Subsystem: ASRock Incorporation Device 7835
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+
+ff:1c.0 System peripheral: Intel Corporation Device 7831 (rev 10)
+	Subsystem: ASRock Incorporation Device 7831
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+ff:1c.1 System peripheral: Intel Corporation Device 7837 (rev 10)
+	Subsystem: ASRock Incorporation Device 7837
+	Flags: fast devsel
+
+ff:1c.2 System peripheral: Intel Corporation Device 7835 (rev 10)
+	Subsystem: ASRock Incorporation Device 7835
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+
+ff:1d.0 System peripheral: Intel Corporation Device 7831 (rev 10)
+	Subsystem: ASRock Incorporation Device 7831
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+ff:1d.1 System peripheral: Intel Corporation Device 7837 (rev 10)
+	Subsystem: ASRock Incorporation Device 7837
+	Flags: fast devsel
+
+ff:1d.2 System peripheral: Intel Corporation Device 7835 (rev 10)
+	Subsystem: ASRock Incorporation Device 7835
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+
+ff:1e.0 System peripheral: Intel Corporation Device 7831 (rev 10)
+	Subsystem: ASRock Incorporation Device 7831
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+ff:1e.1 System peripheral: Intel Corporation Device 7837 (rev 10)
+	Subsystem: ASRock Incorporation Device 7837
+	Flags: fast devsel
+
+ff:1e.2 System peripheral: Intel Corporation Device 7835 (rev 10)
+	Subsystem: ASRock Incorporation Device 7835
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+
+ff:1f.0 System peripheral: Intel Corporation Device 7831 (rev 10)
+	Subsystem: ASRock Incorporation Device 7831
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+
+ff:1f.1 System peripheral: Intel Corporation Device 7837 (rev 10)
+	Subsystem: ASRock Incorporation Device 7837
+	Flags: fast devsel
+
+ff:1f.2 System peripheral: Intel Corporation Device 7835 (rev 10)
+	Subsystem: ASRock Incorporation Device 7835
+	Flags: fast devsel
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Kernel driver in use: knl_uncore
+

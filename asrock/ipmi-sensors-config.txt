@@ -1,0 +1,1024 @@
+Section 1_12V
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Critical_Going_Low                             Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Recoverable_Going_Low                      Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Critical_Going_Low                           Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Recoverable_Going_Low                    Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Critical_Threshold                                                    10.800000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Non_Recoverable_Threshold                                             10.200000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    13.200000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Non_Recoverable_Threshold                                             13.800000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 2_1.05_PCH
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Critical_Going_Low                             Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Recoverable_Going_Low                      Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Critical_Going_Low                           Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Recoverable_Going_Low                    Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Critical_Threshold                                                    0.950000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Non_Recoverable_Threshold                                             0.890000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    1.160000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Non_Recoverable_Threshold                                             1.210000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 3_1.05VSB_PCH
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Critical_Going_Low                             Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Recoverable_Going_Low                      Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Critical_Going_Low                           Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Recoverable_Going_Low                    Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Critical_Threshold                                                    0.950000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Non_Recoverable_Threshold                                             0.890000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    1.160000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Non_Recoverable_Threshold                                             1.210000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 4_CORE_PCH
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Critical_Going_Low                             Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Recoverable_Going_Low                      Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Critical_Going_Low                           Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Recoverable_Going_Low                    Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Critical_Threshold                                                    1.350000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Non_Recoverable_Threshold                                             1.270000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    1.650000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Non_Recoverable_Threshold                                             1.730000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 5_3V_AUX
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Critical_Going_Low                             Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Recoverable_Going_Low                      Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Critical_Going_Low                           Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Recoverable_Going_Low                    Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Critical_Threshold                                                    2.980000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Non_Recoverable_Threshold                                             2.800000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    3.740000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Non_Recoverable_Threshold                                             3.900000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 6_5V_AUX
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Critical_Going_Low                             Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Recoverable_Going_Low                      Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Critical_Going_Low                           Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Recoverable_Going_Low                    Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Critical_Threshold                                                    4.500000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Non_Recoverable_Threshold                                             4.260000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    5.490000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Non_Recoverable_Threshold                                             5.760000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 7_VCCCLR
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Critical_Going_Low                             Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Recoverable_Going_Low                      Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Critical_Going_Low                           Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Recoverable_Going_Low                    Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Critical_Threshold                                                    0.500000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Non_Recoverable_Threshold                                             0.470000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    1.210000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Non_Recoverable_Threshold                                             1.270000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 8_CPU_CDcore
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Critical_Going_Low                             Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Recoverable_Going_Low                      Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Critical_Going_Low                           Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Recoverable_Going_Low                    Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Critical_Threshold                                                    0.810000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Non_Recoverable_Threshold                                             0.760000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    0.990000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Non_Recoverable_Threshold                                             1.040000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 9_VCCM
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Critical_Going_Low                             Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Recoverable_Going_Low                      Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Critical_Going_Low                           Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Recoverable_Going_Low                    Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Critical_Threshold                                                    1.080000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Non_Recoverable_Threshold                                             1.020000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    1.320000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Non_Recoverable_Threshold                                             1.380000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 10_VCCMLB
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Critical_Going_Low                             Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Recoverable_Going_Low                      Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Critical_Going_Low                           Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Recoverable_Going_Low                    Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Critical_Threshold                                                    0.900000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Non_Recoverable_Threshold                                             0.850000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    1.100000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Non_Recoverable_Threshold                                             1.150000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 11_VCCMCD
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Critical_Going_Low                             Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Recoverable_Going_Low                      Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Critical_Going_Low                           Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Recoverable_Going_Low                    Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Critical_Threshold                                                    1.080000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Non_Recoverable_Threshold                                             1.020000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    1.320000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Non_Recoverable_Threshold                                             1.380000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 12_VCCPIO
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Critical_Going_Low                             Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Recoverable_Going_Low                      Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Critical_Going_Low                           Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Recoverable_Going_Low                    Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Critical_Threshold                                                    0.900000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Non_Recoverable_Threshold                                             0.860000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    1.100000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Non_Recoverable_Threshold                                             1.140000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 13_VPP
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Critical_Going_Low                             Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Recoverable_Going_Low                      Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Critical_Going_Low                           Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Recoverable_Going_Low                    Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Critical_Threshold                                                    2.240000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Non_Recoverable_Threshold                                             2.120000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    2.760000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Non_Recoverable_Threshold                                             2.880000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 15_BAT
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Critical_Going_Low                             Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Recoverable_Going_Low                      Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Critical_Going_Low                           Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Recoverable_Going_Low                    Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Critical_Threshold                                                    2.700000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Non_Recoverable_Threshold                                             2.000000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    3.400000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Non_Recoverable_Threshold                                             3.560000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 16_VCCU
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Critical_Going_Low                             Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Recoverable_Going_Low                      Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Critical_Going_Low                           Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Recoverable_Going_Low                    Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Critical_Threshold                                                    0.940000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Non_Recoverable_Threshold                                             0.880000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    1.140000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Non_Recoverable_Threshold                                             1.200000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 17_CPU_Vcore
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Critical_Going_Low                             Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Recoverable_Going_Low                      Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Critical_Going_Low                           Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Recoverable_Going_Low                    Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Critical_Threshold                                                    0.500000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Lower_Non_Recoverable_Threshold                                             0.470000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    1.240000
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Non_Recoverable_Threshold                                             1.300000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 18_Card_Side_Temp
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Critical_Going_High                        Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Critical_Going_High                      Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Non_Critical_Threshold                                                67.000000
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Critical_Threshold                                                    68.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 19_CPU_Temp
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Non_Recoverable_Threshold                                             91.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         1.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         1.000000
+EndSection
+Section 20_MB_Temp
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Critical_Going_High                        Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Critical_Going_High                      Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Non_Critical_Threshold                                                54.000000
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Critical_Threshold                                                    55.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 22_DDR4_A_Temp
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Critical_Going_High                        Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Critical_Going_High                      Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Non_Critical_Threshold                                                84.000000
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Critical_Threshold                                                    85.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         1.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         1.000000
+EndSection
+Section 24_DDR4_B_Temp
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Critical_Going_High                        Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Critical_Going_High                      Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Non_Critical_Threshold                                                84.000000
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Critical_Threshold                                                    85.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         1.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         1.000000
+EndSection
+Section 26_DDR4_C_Temp
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Critical_Going_High                        Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Critical_Going_High                      Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Non_Critical_Threshold                                                84.000000
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Critical_Threshold                                                    85.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         1.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         1.000000
+EndSection
+Section 28_DDR4_D_Temp
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Critical_Going_High                        Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Critical_Going_High                      Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Non_Critical_Threshold                                                84.000000
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Critical_Threshold                                                    85.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         1.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         1.000000
+EndSection
+Section 30_DDR4_E_Temp
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Critical_Going_High                        Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Critical_Going_High                      Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Non_Critical_Threshold                                                84.000000
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Critical_Threshold                                                    85.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         1.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         1.000000
+EndSection
+Section 32_DDR4_F_Temp
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Critical_Going_High                        Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Critical_Going_High                      Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Non_Critical_Threshold                                                84.000000
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Critical_Threshold                                                    85.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         1.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         1.000000
+EndSection
+Section 34_Mezz_Temp
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Non_Recoverable_Threshold                                             90.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 36_PCH_Thermal
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Non_Recoverable_Going_High                     Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Non_Recoverable_Going_High                   Yes
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Non_Recoverable_Threshold                                             95.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 37_PSU1_Temp
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Critical_Threshold                                                    53.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 38_PSU1_Power
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Give valid input for sensor type = Power Supply; units = Watts
+	Upper_Critical_Threshold                                                    1277.000000
+	## Give valid input for sensor type = Power Supply; units = Watts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Power Supply; units = Watts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 39_PSU1_IOUT_OC
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+EndSection
+Section 40_PSU1_VIN_UV
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+EndSection
+Section 41_PSU1_VOUT_OV
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+EndSection
+Section 42_PSU1_Voltage_In
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    240.000000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 43_PSU1_Temp_Status
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+EndSection
+Section 44_PSU2_Temp
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Give valid input for sensor type = Temperature; units = degrees C
+	Upper_Critical_Threshold                                                    53.000000
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Temperature; units = degrees C; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 45_PSU2_Power
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Give valid input for sensor type = Power Supply; units = Watts
+	Upper_Critical_Threshold                                                    1277.000000
+	## Give valid input for sensor type = Power Supply; units = Watts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Power Supply; units = Watts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 46_PSU2_IOUT_OC
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+EndSection
+Section 47_PSU2_VIN_UV
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+EndSection
+Section 48_PSU2_VOUT_OV
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+EndSection
+Section 49_PSU2_Voltage_In
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Upper_Critical_Going_High                            Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Upper_Critical_Going_High                          Yes
+	## Give valid input for sensor type = Voltage; units = Volts
+	Upper_Critical_Threshold                                                    240.000000
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Voltage; units = Volts; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 50_PSU2_Temp_Status
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+EndSection
+Section 51_REAR_FAN1
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Critical_Going_Low                         Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Critical_Going_Low                       Yes
+	## Give valid input for sensor type = Fan; units = RPM
+	Lower_Non_Critical_Threshold                                                100.000000
+	## Give valid input for sensor type = Fan; units = RPM; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Fan; units = RPM; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 52_REAR_FAN2
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Critical_Going_Low                         Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Critical_Going_Low                       Yes
+	## Give valid input for sensor type = Fan; units = RPM
+	Lower_Non_Critical_Threshold                                                100.000000
+	## Give valid input for sensor type = Fan; units = RPM; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Fan; units = RPM; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 53_REAR_FAN3
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Critical_Going_Low                         Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Critical_Going_Low                       Yes
+	## Give valid input for sensor type = Fan; units = RPM
+	Lower_Non_Critical_Threshold                                                100.000000
+	## Give valid input for sensor type = Fan; units = RPM; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Fan; units = RPM; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 54_REAR_FAN4
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Lower_Non_Critical_Going_Low                         Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Lower_Non_Critical_Going_Low                       Yes
+	## Give valid input for sensor type = Fan; units = RPM
+	Lower_Non_Critical_Threshold                                                100.000000
+	## Give valid input for sensor type = Fan; units = RPM; 'None' to not use hysteresis
+	Positive_Going_Threshold_Hysteresis                                         None
+	## Give valid input for sensor type = Fan; units = RPM; 'None' to not use hysteresis
+	Negative_Going_Threshold_Hysteresis                                         None
+EndSection
+Section 55_CPU_ThermalTrip
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Thermal_Trip                                         Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Thermal_Trip                                       Yes
+EndSection
+Section 56_CPU_ProcessorHot
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+EndSection
+Section 57_MemoryHot
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_Critical_Overtemperature                             Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_Critical_Overtemperature                           Yes
+EndSection
+Section 58_Case_Open
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+	## Possible values: Yes/No
+	Enable_Assertion_Event_General_Chassis_Intrusion                            Yes
+	## Possible values: Yes/No
+	Enable_Deassertion_Event_General_Chassis_Intrusion                          Yes
+EndSection
+Section 59_PSU1_Status
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+EndSection
+Section 60_PSU2_Status
+	## Possible values: Yes/No
+	Enable_All_Event_Messages                                                   Yes
+	## Possible values: Yes/No
+	Enable_Scanning_On_This_Sensor                                              Yes
+EndSection
