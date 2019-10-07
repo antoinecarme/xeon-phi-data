@@ -2,7 +2,7 @@
 
 Data for Intel Xeon-Phi base dserver used in my tests
 
-These data are for an Asrock 2U4N-F/X202 with 4 Nodes. Each node has one Xeon-Phi Knight Landing 7210 CPU.
+These data are for an Asrock 2U4N-F/X200 with 4 Nodes. Each node has one Xeon-Phi Knight Landing 7210 CPU.
 
 I will add here the info used to configure this server when installing debian and running pyaf tests/benchmarks
 
