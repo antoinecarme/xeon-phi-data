@@ -12,7 +12,7 @@
 # This table has been filled manually based on the noise level observed when running some cpu-intensive tasks (pyaf benchmarks).
 # interpretation : When the max temperature is between 35C and 45C, set the fan speed to 20% of max speed.
 
-CPU_TEMPERATURE_FAN_SPEED_MAPPING = {35 : 15, 45 : 20 , 55 : 25, 60 : 30, 65 : 35 , 75 : 40, 80 : 45 , 90 : 50}
+CPU_TEMPERATURE_FAN_SPEED_MAPPING = {35 : 18, 45 : 22 , 55 : 25, 60 : 30, 65 : 35 , 75 : 40, 80 : 45 , 90 : 50}
 
 def set_fan_zone_level():
     return
@@ -24,16 +24,16 @@ def get_values(label, cmd):
     output = []
     with open("/tmp/fan_control_command_output.txt") as f:
         output = f.readlines()[0][:-1]
-    print("OUPTUT" , label, output)
+    print("OUTPUT" , label, output)
     return output
 
 def set_fan_speed(percentage_of_max):
     print("SET_FAN_SPEED_PERCENTAGE" , percentage_of_max)
     # values are from 0 to 64, 0 is smart Fan (bios control), 1 is the minimum speed, and 64 is full speed
-    impi_value = str(int(64 * percentage_of_max / 100))
+    ipmi_value = str(int(64 * percentage_of_max / 100))
     cmd = "/usr/sbin/ipmi-raw 00 3a 01 "
-    cmd = cmd + " " + impi_value + " " + impi_value + " " + impi_value + " " + impi_value 
-    cmd = cmd + " " + impi_value + " " + impi_value + " " + impi_value + " " + impi_value 
+    cmd = cmd + " " + ipmi_value + " " + ipmi_value + " " + ipmi_value + " " + ipmi_value 
+    cmd = cmd + " " + ipmi_value + " " + ipmi_value + " " + ipmi_value + " " + ipmi_value 
     l_exec_status = get_values("SET_FAN_SPEED", cmd) 
     print(l_exec_status)
 
@@ -56,6 +56,17 @@ def check_server_name():
     l_prod_name = get_values("CHECK_SERVER_MODEL", l_prod_cmd)
     return(l_prod_name)
 
+def get_interpolated_percentage(max_temp):
+    max_temp_boundary_high = min([x for x in CPU_TEMPERATURE_FAN_SPEED_MAPPING.keys() if max_temp <= x] + [90])
+    max_temp_boundary_low = max([35] + [x for x in CPU_TEMPERATURE_FAN_SPEED_MAPPING.keys() if x <= max_temp ])
+    percentage_of_max_high = CPU_TEMPERATURE_FAN_SPEED_MAPPING.get(max_temp_boundary_high)
+    percentage_of_max_low = CPU_TEMPERATURE_FAN_SPEED_MAPPING.get(max_temp_boundary_low)
+    percentage_of_max = percentage_of_max_high
+    if(percentage_of_max_high > percentage_of_max_low):
+        percentage_of_max = percentage_of_max_low + (max_temp - max_temp_boundary_low) / (max_temp_boundary_high - max_temp_boundary_low) * (percentage_of_max_high - percentage_of_max_low)
+    print("INTERPOLATED_DATA" , (max_temp_boundary_low, max_temp_boundary_high, percentage_of_max_low, percentage_of_max_high), max_temp , percentage_of_max)
+    return percentage_of_max
+
 def run():
     server_name = check_server_name()
     if(server_name != "ASRockRack 2U4N-F/X200 X200D6HM"):
@@ -68,9 +79,9 @@ def run():
         l_temps = get_temperatures()
         max_temp = max(l_temps)
         print("MAX_TEMP" , max_temp)
-        max_temp_boundary = min([x for x in CPU_TEMPERATURE_FAN_SPEED_MAPPING.keys() if max_temp <= x])
-        percentage_of_max = CPU_TEMPERATURE_FAN_SPEED_MAPPING.get(max_temp_boundary , 25)
+        percentage_of_max = get_interpolated_percentage(max_temp)
         set_fan_speed(percentage_of_max)
+        get_fan_speeds()
         time.sleep( 30 )
 
 
