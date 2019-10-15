@@ -30,7 +30,11 @@ def get_values(label, cmd):
 def set_fan_speed(percentage_of_max):
     print("SET_FAN_SPEED_PERCENTAGE" , percentage_of_max)
     # values are from 0 to 64, 0 is smart Fan (bios control), 1 is the minimum speed, and 64 is full speed
-    ipmi_value = str(int(64 * percentage_of_max / 100))
+    ipmi_value = int(64 * percentage_of_max / 100)
+    # avoid too extermal values
+    ipmi_value = max(12 , ipmi_value)
+    ipmi_value = min(60 , ipmi_value)
+    ipmi_value = str(ipmi_value)
     cmd = "/usr/sbin/ipmi-raw 00 3a 01 "
     cmd = cmd + " " + ipmi_value + " " + ipmi_value + " " + ipmi_value + " " + ipmi_value 
     cmd = cmd + " " + ipmi_value + " " + ipmi_value + " " + ipmi_value + " " + ipmi_value 
