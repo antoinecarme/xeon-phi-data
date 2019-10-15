@@ -81,6 +81,8 @@ def run():
         print("MAX_TEMP" , max_temp)
         percentage_of_max = get_interpolated_percentage(max_temp)
         set_fan_speed(percentage_of_max)
+        # wait for fans to stabilize !!!
+        time.sleep( 1 )
         get_fan_speeds()
         time.sleep( 30 )
 
