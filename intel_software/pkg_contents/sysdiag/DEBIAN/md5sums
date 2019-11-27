@@ -1,0 +1,12 @@
+8131661ad5102ddeca30fe432c85420f  usr/sbin/sysdiag
+087860cf80a604eecac5977ca072f67d  usr/share/doc/sysdiag/LICENSE.txt
+f5c406a5b12cadbc091c0aa137fbc403  usr/share/doc/sysdiag/changelog.Debian.gz
+1b7d90f6a3bb2d21e9ccad19464d9c17  usr/share/python/runtime.d/sysdiag.rtupdate
+d41d8cd98f00b204e9800998ecf8427e  usr/share/sysdiag/__init__.py
+c598f2b995795e41419e740c3a48bd5c  usr/share/sysdiag/cpu-info.so
+9a3f5482e3ae26b68d60cba29663f086  usr/share/sysdiag/diag_memory.py
+c5d578ab023f8dfdc1f9c9dfe212deeb  usr/share/sysdiag/diag_pcie.py
+702dd6da5da9ea70c5cc72d56137e728  usr/share/sysdiag/diag_power.py
+2823e7eecaffca7f1b21024de29ec813  usr/share/sysdiag/diag_system.py
+ec46cbf693adf2529ccf0f158abacb15  usr/share/sysdiag/sys_diag.py
+b888650ee4633c7050610411b6f3dd0b  usr/share/sysdiag/sys_utils.py

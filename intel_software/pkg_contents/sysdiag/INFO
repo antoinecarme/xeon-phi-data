@@ -1,0 +1,20 @@
+ new Debian package, version 2.0.
+ size 22204 bytes: control archive=1167 bytes.
+     583 bytes,    14 lines      control              
+     795 bytes,    12 lines      md5sums              
+     182 bytes,     9 lines   *  postinst             #!/bin/sh
+     251 bytes,    14 lines   *  prerm                #!/bin/sh
+ Package: sysdiag
+ Version: 2.3.0+xpps-2.3.0.482
+ Architecture: amd64
+ Origin: Intel(R) Xeon Phi(TM) processor software
+ Maintainer: Intel Corporation <https://supporttickets.intel.com>
+ Installed-Size: 105
+ Depends: libc6 (>= 2.7), python2.7, python:any (>= 2.7.5-5~), numactl
+ Section: utils
+ Priority: optional
+ Description: Intel(R) Xeon Phi(TM) processor diagnosing tool
+  The SysDiag tool provides a variety of information and diagnostics
+  for the processor.  SysDiag also monitors DDR, MCDRAM and PCI-E
+  information. It also monitors temperature  and performance state
+  data of the CPU.

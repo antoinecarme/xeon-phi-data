@@ -1,0 +1,16 @@
+Package: zonesort
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 39
+Origin: Intel(R) Xeon Phi(TM) processor software
+Maintainer: Intel Corporation <https://supporttickets.intel.com>
+Architecture: amd64
+Version: 1.0+xpps-2.3.0.482
+Description: Zone free list sorter
+ The zonesort module provides mechanism to change order in a list of free pages kept
+ in Linux kernel buddy allocator. The order is changed so to minimize possible
+ page collisions later when those pages are served to the application.
+ The algorithm assumes that the system has up to 16GB of direct-mapped cache.
+Description-md5: 1af8e47a5bdf8cf70f2d15d465c1fd3e
+

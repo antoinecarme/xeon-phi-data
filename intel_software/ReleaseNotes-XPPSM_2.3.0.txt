@@ -1,0 +1,104 @@
+Release Notes for Intel® Xeon Phi™ Processor Software for Linux* Release
+Release Version: 2.3.0
+Tue 2/13/2018 
+
+LEGAL DISCLAIMERS:
+You may not use or facilitate the use of this document in connection with any infringement or other legal analysis concerning Intel products described herein. You agree to grant Intel a non-exclusive, royalty-free license to any patent claim thereafter drafted which includes subject matter disclosed herein.
+
+Intel is making no claims of usability, efficacy or warranty. The license.txt contained herein completely defines the license and use of this software except in the cases of the GPL components. This document contains information on products in the design phase of development.  The information here is subject to change without notice.
+
+All information provided here is subject to change without notice. Contact your Intel representative to obtain the latest Intel product specifications and roadmaps.
+
+Do not finalize a design with this information.
+
+Intel technologies may require enabled hardware, specific software, or services activation. Check with your system manufacturer or retailer.
+
+The code contained in these modules may be specific to the Intel product line Intel® Xeon Phi™ Processor X200 Product Family and is not backward compatible with other Intel products.
+Additionally, Intel makes no commitments for support of the code or instruction set in future products.
+
+No license (express or implied, by estoppel or otherwise) to any intellectual property rights is granted by this document.
+
+The products described may contain design defects or errors known as errata which may cause the product to deviate from published specifications. Current characterized errata are available on request.
+
+Intel does not control or audit third-party benchmark data or the web sites referenced in this document. You should visit the referenced web site and confirm whether referenced data are accurate.
+
+Copies of documents which have an order number and are referenced in this document may be obtained by calling 1-800-548-4725 or by visit www.intel.com/design/literature.htm.
+
+Intel, the Intel logo, Intel Omni-Path Architecture (Intel OPA), Intel Parallel Studio XE and Intel Xeon Phi are trademarks of Intel Corporation in the U.S. and/or other countries.
+
+*Other names and brands may be claimed as the property of others.
+
+Copyright © 2018, Intel Corporation. All Rights Reserved.
+
+
+Table Of Contents
+
+  1.   Changes
+
+  2.   Known Issues
+
+  3.   Resolved Issues
+  
+
+
+
+
+1.   Changes
+
+-------------------------------------------------------------------------
+Change number:      0000001
+Component:          OS-Support
+Description:        Intel® Xeon Phi™ Processor Software for Linux* Release supports 
+                    now both hardware (x200 and x205)
+-------------------------------------------------------------------------
+Change number:      0000002
+Component:          OS-Support
+Description:        Common TAR package for each supported CentOS*/Red Hat* Enterprise Linux* 7 distribution
+-------------------------------------------------------------------------
+Change number:      0000003
+Component:          OS-Support
+Description:        Common TAR package for each supported SUSE* Linux* Enterprise Server 12 distribution
+-------------------------------------------------------------------------
+Change number:      0000004
+Component:          Tools
+Description:        The micperf tool is recompiled now with Intel® Math Kernel Library 2018 Update 1
+-------------------------------------------------------------------------
+Change number:      0000005
+Component:          Tools 
+Description:        Update memkind package to 1.7 release
+-------------------------------------------------------------------------
+Change number:      0000006
+Component:          Tools
+Description:        Changed displayed units in IGEMM benchmark
+-------------------------------------------------------------------------
+
+
+
+
+
+2.   Known Issues
+-------------------------------------------------------------------------
+Intel Tracking ID:  0000776
+Affected OS:        All
+Description:        [Tools][hwloc] The hwloc-dump-hwdata tool shows wrong Intel 
+                    Xeon Phi processor name in the output
+Notes:              Investigating
+-------------------------------------------------------------------------
+Intel Tracking ID:  0001159
+Affected OS:        All
+Description:        [Tools][hwloc] The hwloc-dump-hwdata tool does not properly detect
+                    non Intel Xeon Phi x200 processors
+Notes:              Investigating
+-------------------------------------------------------------------------
+
+
+
+
+3.   Resolved Issues
+
+-------------------------------------------------------------------------
+Intel Tracking ID:  0001126
+Affected OS:        Ubuntu 17.04
+Description:        [OS_Support] The zonesort kernel module update does not work on SUSE* Linux* Enterprise Server
+Notes:		    Fixed
+-------------------------------------------------------------------------

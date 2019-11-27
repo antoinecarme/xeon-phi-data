@@ -1,0 +1,1163 @@
+Debug level set to 4
+args = {'all': True, 'numactl': None, 'mem': False, 'verbosity': 4, 'interval': '00:05:00', 'system': False, 't_cpu_info': False, 'pci': False, 'r_pstates': False, 'output': None}
+Found test to run all
+#############   STARTED   All   #############
+Running mem
+#############   STARTED   Memory info   #############
+	Table Type 16 Content (Num Ele: 2): 
+ Type: 16
+Length: 0x17
+Handle: 0x11
+Location: 0x3
+Use: 0x3
+Mem Err Corr: 0x6
+MaxCap: 402653184
+Mem Err Inf: 0xfffe
+Num Mem Dev: 6
+Ext Max Cap: 0
+
+Type: 16
+Length: 0x17
+Handle: 0x12
+Location: 0x1
+Use: 0x3
+Mem Err Corr: 0x6
+MaxCap: 16777216
+Mem Err Inf: 0xfffe
+Num Mem Dev: 8
+Ext Max Cap: 0
+
+ 	Ending table Type 16.
+	Table Type 17 Content (Num Ele: 14): 
+ Type: 17
+Length: 0x28
+Handle: 0x1e
+Phys Memory Loc: 17
+Mem Error Inf: 0xfffe
+Total Width: 72
+Data Width: 64
+Size: 8192
+Form Factor: 0x9
+Device Set: 0x0
+Device Locator: DIMM_A
+Bank Locator: Unknown
+Memory Type: 0x1a
+Type Detail: 0x2080
+Speed: 2132
+Manufacturer: Unknown
+Serial Number: 00000000
+Asset Tag: DIMM_A_AssetTag
+Part Number: M4R0-8GSQECRG-B202
+Attributes: 0x1
+Ext Size: 0x0
+Conf Memory Speed: 2134
+Min Volt: 1200
+Max Volt: 1200
+Conf Volt: 1500
+
+Type: 17
+Length: 0x28
+Handle: 0x18
+Phys Memory Loc: 17
+Mem Error Inf: 0xfffe
+Total Width: 72
+Data Width: 64
+Size: 8192
+Form Factor: 0x9
+Device Set: 0x0
+Device Locator: DIMM_E
+Bank Locator: Unknown
+Memory Type: 0x1a
+Type Detail: 0x2080
+Speed: 2132
+Manufacturer: Unknown
+Serial Number: 00000000
+Asset Tag: DIMM_E_AssetTag
+Part Number: M4R0-8GSQECRG-B202
+Attributes: 0x1
+Ext Size: 0x0
+Conf Memory Speed: 2134
+Min Volt: 1200
+Max Volt: 1200
+Conf Volt: 1500
+
+Type: 17
+Length: 0x28
+Handle: 0x32
+Phys Memory Loc: 18
+Mem Error Inf: 0xfffe
+Total Width: 72
+Data Width: 64
+Size: 2048
+Form Factor: 0x5
+Device Set: 0x1
+Device Locator: MCDRAM_8
+Bank Locator: CPU 0
+Memory Type: 0x3
+Type Detail: 0x80
+Speed: 6400
+Manufacturer: INTEL
+Serial Number: N/A
+Asset Tag: N/A
+Part Number: N/A
+Attributes: 0x0
+Ext Size: 0x0
+Conf Memory Speed: 6400
+Min Volt: 1200
+Max Volt: 1200
+Conf Volt: 1500
+
+Type: 17
+Length: 0x28
+Handle: 0x28
+Phys Memory Loc: 18
+Mem Error Inf: 0xfffe
+Total Width: 72
+Data Width: 64
+Size: 2048
+Form Factor: 0x5
+Device Set: 0x1
+Device Locator: MCDRAM_3
+Bank Locator: CPU 0
+Memory Type: 0x3
+Type Detail: 0x80
+Speed: 6400
+Manufacturer: INTEL
+Serial Number: N/A
+Asset Tag: N/A
+Part Number: N/A
+Attributes: 0x0
+Ext Size: 0x0
+Conf Memory Speed: 6400
+Min Volt: 1200
+Max Volt: 1200
+Conf Volt: 1500
+
+Type: 17
+Length: 0x28
+Handle: 0x2e
+Phys Memory Loc: 18
+Mem Error Inf: 0xfffe
+Total Width: 72
+Data Width: 64
+Size: 2048
+Form Factor: 0x5
+Device Set: 0x1
+Device Locator: MCDRAM_6
+Bank Locator: CPU 0
+Memory Type: 0x3
+Type Detail: 0x80
+Speed: 6400
+Manufacturer: INTEL
+Serial Number: N/A
+Asset Tag: N/A
+Part Number: N/A
+Attributes: 0x0
+Ext Size: 0x0
+Conf Memory Speed: 6400
+Min Volt: 1200
+Max Volt: 1200
+Conf Volt: 1500
+
+Type: 17
+Length: 0x28
+Handle: 0x24
+Phys Memory Loc: 18
+Mem Error Inf: 0xfffe
+Total Width: 72
+Data Width: 64
+Size: 2048
+Form Factor: 0x5
+Device Set: 0x1
+Device Locator: MCDRAM_1
+Bank Locator: CPU 0
+Memory Type: 0x3
+Type Detail: 0x80
+Speed: 6400
+Manufacturer: INTEL
+Serial Number: N/A
+Asset Tag: N/A
+Part Number: N/A
+Attributes: 0x0
+Ext Size: 0x0
+Conf Memory Speed: 6400
+Min Volt: 1200
+Max Volt: 1200
+Conf Volt: 1500
+
+Type: 17
+Length: 0x28
+Handle: 0x20
+Phys Memory Loc: 17
+Mem Error Inf: 0xfffe
+Total Width: 72
+Data Width: 64
+Size: 8192
+Form Factor: 0x9
+Device Set: 0x0
+Device Locator: DIMM_B
+Bank Locator: Unknown
+Memory Type: 0x1a
+Type Detail: 0x2080
+Speed: 2132
+Manufacturer: Unknown
+Serial Number: 00000000
+Asset Tag: DIMM_B_AssetTag
+Part Number: M4R0-8GSQECRG-B202
+Attributes: 0x1
+Ext Size: 0x0
+Conf Memory Speed: 2134
+Min Volt: 1200
+Max Volt: 1200
+Conf Volt: 1500
+
+Type: 17
+Length: 0x28
+Handle: 0x1b
+Phys Memory Loc: 17
+Mem Error Inf: 0xfffe
+Total Width: 72
+Data Width: 64
+Size: 8192
+Form Factor: 0x9
+Device Set: 0x0
+Device Locator: DIMM_F
+Bank Locator: Unknown
+Memory Type: 0x1a
+Type Detail: 0x2080
+Speed: 2132
+Manufacturer: Unknown
+Serial Number: 00000000
+Asset Tag: DIMM_F_AssetTag
+Part Number: M4R0-8GSQECRG-B202
+Attributes: 0x1
+Ext Size: 0x0
+Conf Memory Speed: 2134
+Min Volt: 1200
+Max Volt: 1200
+Conf Volt: 1500
+
+Type: 17
+Length: 0x28
+Handle: 0x17
+Phys Memory Loc: 17
+Mem Error Inf: 0xfffe
+Total Width: 0
+Data Width: 0
+Size: 0
+Form Factor: 0x9
+Device Set: 0x0
+Device Locator: DIMM_D
+Bank Locator: Unknown
+Memory Type: 0x1a
+Type Detail: 0x2080
+Speed: 0
+Manufacturer: Empty/NO DIMM
+Serial Number: Empty/NO DIMM
+Asset Tag: NO DIMM
+Part Number: Empty/NO DIMM
+Attributes: 0x0
+Ext Size: 0x0
+Conf Memory Speed: 0
+Min Volt: 1200
+Max Volt: 1200
+Conf Volt: 1500
+
+Type: 17
+Length: 0x28
+Handle: 0x2a
+Phys Memory Loc: 18
+Mem Error Inf: 0xfffe
+Total Width: 72
+Data Width: 64
+Size: 2048
+Form Factor: 0x5
+Device Set: 0x1
+Device Locator: MCDRAM_4
+Bank Locator: CPU 0
+Memory Type: 0x3
+Type Detail: 0x80
+Speed: 6400
+Manufacturer: INTEL
+Serial Number: N/A
+Asset Tag: N/A
+Part Number: N/A
+Attributes: 0x0
+Ext Size: 0x0
+Conf Memory Speed: 6400
+Min Volt: 1200
+Max Volt: 1200
+Conf Volt: 1500
+
+Type: 17
+Length: 0x28
+Handle: 0x30
+Phys Memory Loc: 18
+Mem Error Inf: 0xfffe
+Total Width: 72
+Data Width: 64
+Size: 2048
+Form Factor: 0x5
+Device Set: 0x1
+Device Locator: MCDRAM_7
+Bank Locator: CPU 0
+Memory Type: 0x3
+Type Detail: 0x80
+Speed: 6400
+Manufacturer: INTEL
+Serial Number: N/A
+Asset Tag: N/A
+Part Number: N/A
+Attributes: 0x0
+Ext Size: 0x0
+Conf Memory Speed: 6400
+Min Volt: 1200
+Max Volt: 1200
+Conf Volt: 1500
+
+Type: 17
+Length: 0x28
+Handle: 0x26
+Phys Memory Loc: 18
+Mem Error Inf: 0xfffe
+Total Width: 72
+Data Width: 64
+Size: 2048
+Form Factor: 0x5
+Device Set: 0x1
+Device Locator: MCDRAM_2
+Bank Locator: CPU 0
+Memory Type: 0x3
+Type Detail: 0x80
+Speed: 6400
+Manufacturer: INTEL
+Serial Number: N/A
+Asset Tag: N/A
+Part Number: N/A
+Attributes: 0x0
+Ext Size: 0x0
+Conf Memory Speed: 6400
+Min Volt: 1200
+Max Volt: 1200
+Conf Volt: 1500
+
+Type: 17
+Length: 0x28
+Handle: 0x2c
+Phys Memory Loc: 18
+Mem Error Inf: 0xfffe
+Total Width: 72
+Data Width: 64
+Size: 2048
+Form Factor: 0x5
+Device Set: 0x1
+Device Locator: MCDRAM_5
+Bank Locator: CPU 0
+Memory Type: 0x3
+Type Detail: 0x80
+Speed: 6400
+Manufacturer: INTEL
+Serial Number: N/A
+Asset Tag: N/A
+Part Number: N/A
+Attributes: 0x0
+Ext Size: 0x0
+Conf Memory Speed: 6400
+Min Volt: 1200
+Max Volt: 1200
+Conf Volt: 1500
+
+Type: 17
+Length: 0x28
+Handle: 0x22
+Phys Memory Loc: 17
+Mem Error Inf: 0xfffe
+Total Width: 72
+Data Width: 64
+Size: 8192
+Form Factor: 0x9
+Device Set: 0x0
+Device Locator: DIMM_C
+Bank Locator: Unknown
+Memory Type: 0x1a
+Type Detail: 0x2080
+Speed: 2132
+Manufacturer: Unknown
+Serial Number: 00000000
+Asset Tag: DIMM_C_AssetTag
+Part Number: M4R0-8GSQECRG-B202
+Attributes: 0x1
+Ext Size: 0x0
+Conf Memory Speed: 2134
+Min Volt: 1200
+Max Volt: 1200
+Conf Volt: 1500
+
+ 	Ending table Type 17.
+Total Memory: 57344 MB
+Memory Configuration is: Flat
+MCDRAM Configured as Cache is: No MCDRAM used as Cache
+Cluster Configuration is: ALL2ALL
+*************** DDR Info ***************
+Total DDR Memory: 40960 MB
+DDR Speed: 2.132 GT/s
+DDR Frecuency: 2132 MHz
+DDR Voltage: 1500 V
+DDR Access(R/W): Available
+*****************************************
+*************** MCDRAM Info ***************
+Total MCDRAM Memory: 16384 MB
+      MCDRAM Used as Cache: 0 MB
+      MCDRAM Used as System Memory: 16384 MB
+MCDRAM Speed: 6.4 GT/s
+MCDRAM Frecuency: 6400 MHz
+MCDRAM Voltage: 1500 V
+MCDRAM Access(R/W) (Only for MCDRAM used as System Memory): Available
+********************************************
+#############   PASSED  Memory info   #############
+Running pci
+#############   STARTED   PCIExpress info   #############
+Number of PCIe Devices found: 2
+PCIe Devices found: ['00:1c.0', '00:1c.1']
+processing 00:1c.0 PCI bridge: Intel Corporation C610/X99 series chipset PCI Express Root Port #1 (rev d5) (prog-if 00 [Normal decode])
+processing Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+processing Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+processing Latency: 0, Cache Line Size: 64 bytes
+processing Interrupt: pin A routed to IRQ 26
+processing NUMA node: 0
+processing Bus: primary=00, secondary=02, subordinate=02, sec-latency=0
+processing I/O behind bridge: None
+processing Memory behind bridge: None
+processing Prefetchable memory behind bridge: None
+processing Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+processing BridgeCtl: Parity- SERR+ NoISA- VGA- VGA16+ MAbort- >Reset- FastB2B-
+processing PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+processing Capabilities: [40] Express (v2) Root Port (Slot-), MSI 00
+processing DevCap:	MaxPayload 128 bytes, PhantFunc 0
+processing ExtTag- RBE+
+processing DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
+processing RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+processing MaxPayload 128 bytes, MaxReadReq 128 bytes
+processing DevSta:	CorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr+ TransPend-
+processing LnkCap:	Port #1, Speed 5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s <1us, L1 <4us
+processing ClockPM- Surprise- LLActRep+ BwNot+ ASPMOptComp-
+processing LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk-
+processing ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+processing LnkSta:	Speed 2.5GT/s (downgraded), Width x0 (downgraded)
+processing TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+processing RootCtl: ErrCorrectable- ErrNon-Fatal- ErrFatal- PMEIntEna+ CRSVisible-
+processing RootCap: CRSVisible-
+processing RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+processing DevCap2: Completion Timeout: Range ABC, TimeoutDis+, LTR+, OBFF Via WAKE# ARIFwd-
+processing AtomicOpsCap: Routing- 32bit- 64bit- 128bitCAS-
+processing DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-, LTR-, OBFF Disabled ARIFwd-
+processing AtomicOpsCtl: ReqEn- EgressBlck-
+processing LnkCtl2: Target Link Speed: 5GT/s, EnterCompliance- SpeedDis-
+processing Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+processing Compliance De-emphasis: -6dB
+processing LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete-, EqualizationPhase1-
+processing EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
+processing Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+processing Address: fee00258  Data: 0000
+processing Capabilities: [90] Subsystem: ASRock Incorporation C610/X99 series chipset PCI Express Root Port
+processing Capabilities: [a0] Power Management version 3
+processing Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+processing Status: D3 NoSoftRst- PME-Enable+ DSel=0 DScale=0 PME-
+processing Kernel driver in use: pcieport
+processing 
+Returning pcie_dev = {'Bridge': '00:1c.0', 'LnkWidth': 'x0 (downgraded', 'CapWidth': 'x1', 'LnkSpeed': '2.5GT/s (downgraded)', 'CapSpeed': '5GT/s'}
+PCIExpress device 00:1c.0 0    capable link speed: 5GT/s
+PCIExpress device 00:1c.0 0    capable link width: x1
+PCIExpress device 00:1c.0 0 negotiated link speed: 2.5GT/s (downgraded)
+PCIExpress device 00:1c.0 0 negotiated link width: x0 (downgraded
+processing 00:1c.1 PCI bridge: Intel Corporation C610/X99 series chipset PCI Express Root Port #2 (rev d5) (prog-if 00 [Normal decode])
+processing Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+processing Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+processing Latency: 0, Cache Line Size: 64 bytes
+processing Interrupt: pin B routed to IRQ 27
+processing NUMA node: 0
+processing Bus: primary=00, secondary=03, subordinate=04, sec-latency=0
+processing I/O behind bridge: 0000d000-0000dfff [size=4K]
+processing Memory behind bridge: fa000000-fb0fffff [size=17M]
+processing Prefetchable memory behind bridge: None
+processing Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+processing BridgeCtl: Parity- SERR+ NoISA- VGA+ VGA16+ MAbort- >Reset- FastB2B-
+processing PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+processing Capabilities: [40] Express (v2) Root Port (Slot+), MSI 00
+processing DevCap:	MaxPayload 128 bytes, PhantFunc 0
+processing ExtTag- RBE+
+processing DevCtl:	CorrErr- NonFatalErr- FatalErr- UnsupReq-
+processing RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+processing MaxPayload 128 bytes, MaxReadReq 128 bytes
+processing DevSta:	CorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr+ TransPend-
+processing LnkCap:	Port #2, Speed 5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s <512ns, L1 <4us
+processing ClockPM- Surprise- LLActRep+ BwNot+ ASPMOptComp-
+processing LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- CommClk+
+processing ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+processing LnkSta:	Speed 2.5GT/s (downgraded), Width x1 (ok)
+processing TrErr- Train- SlotClk+ DLActive+ BWMgmt+ ABWMgmt-
+processing SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surprise-
+processing Slot #1, PowerLimit 10.000W; Interlock- NoCompl+
+processing SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq- LinkChg-
+processing Control: AttnInd Unknown, PwrInd Unknown, Power- Interlock-
+processing SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet+ Interlock-
+processing Changed: MRL- PresDet- LinkState-
+processing RootCtl: ErrCorrectable- ErrNon-Fatal- ErrFatal- PMEIntEna+ CRSVisible-
+processing RootCap: CRSVisible-
+processing RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+processing DevCap2: Completion Timeout: Range ABC, TimeoutDis+, LTR+, OBFF Not Supported ARIFwd-
+processing AtomicOpsCap: Routing- 32bit- 64bit- 128bitCAS-
+processing DevCtl2: Completion Timeout: 260ms to 900ms, TimeoutDis-, LTR-, OBFF Disabled ARIFwd-
+processing AtomicOpsCtl: ReqEn- EgressBlck-
+processing LnkCtl2: Target Link Speed: 5GT/s, EnterCompliance- SpeedDis-
+processing Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+processing Compliance De-emphasis: -6dB
+processing LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete-, EqualizationPhase1-
+processing EqualizationPhase2-, EqualizationPhase3-, LinkEqualizationRequest-
+processing Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+processing Address: fee00298  Data: 0000
+processing Capabilities: [90] Subsystem: ASRock Incorporation C610/X99 series chipset PCI Express Root Port
+processing Capabilities: [a0] Power Management version 3
+processing Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+processing Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+processing Kernel driver in use: pcieport
+processing 
+Returning pcie_dev = {'Bridge': '00:1c.1', 'LnkWidth': 'x1 (ok', 'CapWidth': 'x1', 'LnkSpeed': '2.5GT/s (downgraded)', 'CapSpeed': '5GT/s'}
+PCIExpress device 00:1c.1 0    capable link speed: 5GT/s
+PCIExpress device 00:1c.1 0    capable link width: x1
+PCIExpress device 00:1c.1 0 negotiated link speed: 2.5GT/s (downgraded)
+PCIExpress device 00:1c.1 0 negotiated link width: x1 (ok
+#############   PASSED  PCIExpress info   #############
+Running t_cpu_info
+#############   STARTED   CPU-Info   #############
+Power consumption
+	CPU consumption
+		Whole package consumption: 37.57 Watts
+		Cores consumption: Not Available
+	RAM consumption 2.11 Watts
+Temperature per core
+	Core   0: Temp: 48 Celsius
+	Core   1: Temp: 48 Celsius
+	Core   2: Temp: 46 Celsius
+	Core   3: Temp: 47 Celsius
+	Core   6: Temp: 46 Celsius
+	Core   7: Temp: 46 Celsius
+	Core  10: Temp: 47 Celsius
+	Core  11: Temp: 47 Celsius
+	Core  12: Temp: 45 Celsius
+	Core  13: Temp: 45 Celsius
+	Core  14: Temp: 46 Celsius
+	Core  15: Temp: 46 Celsius
+	Core  18: Temp: 45 Celsius
+	Core  19: Temp: 45 Celsius
+	Core  20: Temp: 45 Celsius
+	Core  21: Temp: 46 Celsius
+	Core  22: Temp: 46 Celsius
+	Core  23: Temp: 46 Celsius
+	Core  24: Temp: 48 Celsius
+	Core  25: Temp: 48 Celsius
+	Core  26: Temp: 47 Celsius
+	Core  27: Temp: 47 Celsius
+	Core  28: Temp: 45 Celsius
+	Core  29: Temp: 45 Celsius
+	Core  30: Temp: 46 Celsius
+	Core  31: Temp: 46 Celsius
+	Core  32: Temp: 46 Celsius
+	Core  33: Temp: 46 Celsius
+	Core  34: Temp: 46 Celsius
+	Core  35: Temp: 46 Celsius
+	Core  36: Temp: 45 Celsius
+	Core  37: Temp: 45 Celsius
+	Core  38: Temp: 46 Celsius
+	Core  39: Temp: 46 Celsius
+	Core  40: Temp: 47 Celsius
+	Core  41: Temp: 47 Celsius
+	Core  42: Temp: 47 Celsius
+	Core  43: Temp: 47 Celsius
+	Core  44: Temp: 47 Celsius
+	Core  45: Temp: 47 Celsius
+	Core  46: Temp: 45 Celsius
+	Core  47: Temp: 46 Celsius
+	Core  48: Temp: 45 Celsius
+	Core  49: Temp: 45 Celsius
+	Core  50: Temp: 47 Celsius
+	Core  51: Temp: 47 Celsius
+	Core  52: Temp: 45 Celsius
+	Core  53: Temp: 46 Celsius
+	Core  56: Temp: 47 Celsius
+	Core  57: Temp: 48 Celsius
+	Core  58: Temp: 46 Celsius
+	Core  59: Temp: 46 Celsius
+	Core  60: Temp: 46 Celsius
+	Core  61: Temp: 46 Celsius
+	Core  62: Temp: 47 Celsius
+	Core  63: Temp: 46 Celsius
+	Core  64: Temp: 45 Celsius
+	Core  65: Temp: 45 Celsius
+	Core  68: Temp: 47 Celsius
+	Core  69: Temp: 47 Celsius
+	Core  70: Temp: 48 Celsius
+	Core  71: Temp: 48 Celsius
+	Core  72: Temp: 46 Celsius
+	Core  73: Temp: 46 Celsius
+Package(s) temperature
+	Package #0 temperature: 52
+Core frequencies
+	CPU    0: Frequency: 1.28 Ghz
+	CPU    1: Frequency: 1.22 Ghz
+	CPU    2: Frequency: 1.26 Ghz
+	CPU    3: Frequency: 1.25 Ghz
+	CPU    4: Frequency: 1.26 Ghz
+	CPU    5: Frequency: 1.23 Ghz
+	CPU    6: Frequency: 1.25 Ghz
+	CPU    7: Frequency: 1.24 Ghz
+	CPU    8: Frequency: 1.28 Ghz
+	CPU    9: Frequency: 1.22 Ghz
+	CPU   10: Frequency: 1.26 Ghz
+	CPU   11: Frequency: 1.24 Ghz
+	CPU   12: Frequency: 1.27 Ghz
+	CPU   13: Frequency: 1.26 Ghz
+	CPU   14: Frequency: 1.25 Ghz
+	CPU   15: Frequency: 1.26 Ghz
+	CPU   16: Frequency: 1.26 Ghz
+	CPU   17: Frequency: 1.24 Ghz
+	CPU   18: Frequency: 1.26 Ghz
+	CPU   19: Frequency: 1.25 Ghz
+	CPU   20: Frequency: 1.26 Ghz
+	CPU   21: Frequency: 1.25 Ghz
+	CPU   22: Frequency: 1.26 Ghz
+	CPU   23: Frequency: 1.25 Ghz
+	CPU   24: Frequency: 1.26 Ghz
+	CPU   25: Frequency: 1.25 Ghz
+	CPU   26: Frequency: 1.26 Ghz
+	CPU   27: Frequency: 1.23 Ghz
+	CPU   28: Frequency: 1.26 Ghz
+	CPU   29: Frequency: 1.24 Ghz
+	CPU   30: Frequency: 1.26 Ghz
+	CPU   31: Frequency: 1.24 Ghz
+	CPU   32: Frequency: 1.25 Ghz
+	CPU   33: Frequency: 1.24 Ghz
+	CPU   34: Frequency: 1.26 Ghz
+	CPU   35: Frequency: 1.24 Ghz
+	CPU   36: Frequency: 1.26 Ghz
+	CPU   37: Frequency: 1.25 Ghz
+	CPU   38: Frequency: 1.26 Ghz
+	CPU   39: Frequency: 1.24 Ghz
+	CPU   40: Frequency: 1.26 Ghz
+	CPU   41: Frequency: 1.24 Ghz
+	CPU   42: Frequency: 1.26 Ghz
+	CPU   43: Frequency: 1.24 Ghz
+	CPU   44: Frequency: 1.25 Ghz
+	CPU   45: Frequency: 1.24 Ghz
+	CPU   46: Frequency: 1.26 Ghz
+	CPU   47: Frequency: 1.25 Ghz
+	CPU   48: Frequency: 1.26 Ghz
+	CPU   49: Frequency: 1.25 Ghz
+	CPU   50: Frequency: 1.26 Ghz
+	CPU   51: Frequency: 1.25 Ghz
+	CPU   52: Frequency: 1.26 Ghz
+	CPU   53: Frequency: 1.25 Ghz
+	CPU   54: Frequency: 1.26 Ghz
+	CPU   55: Frequency: 1.25 Ghz
+	CPU   56: Frequency: 1.25 Ghz
+	CPU   57: Frequency: 1.24 Ghz
+	CPU   58: Frequency: 1.25 Ghz
+	CPU   59: Frequency: 1.24 Ghz
+	CPU   60: Frequency: 1.25 Ghz
+	CPU   61: Frequency: 1.24 Ghz
+	CPU   62: Frequency: 1.25 Ghz
+	CPU   63: Frequency: 1.24 Ghz
+	CPU   64: Frequency: 1.27 Ghz
+	CPU   65: Frequency: 1.25 Ghz
+	CPU   66: Frequency: 1.27 Ghz
+	CPU   67: Frequency: 1.26 Ghz
+	CPU   68: Frequency: 1.27 Ghz
+	CPU   69: Frequency: 1.25 Ghz
+	CPU   70: Frequency: 1.26 Ghz
+	CPU   71: Frequency: 1.25 Ghz
+	CPU   72: Frequency: 1.28 Ghz
+	CPU   73: Frequency: 1.21 Ghz
+	CPU   74: Frequency: 1.27 Ghz
+	CPU   75: Frequency: 1.25 Ghz
+	CPU   76: Frequency: 1.27 Ghz
+	CPU   77: Frequency: 1.26 Ghz
+	CPU   78: Frequency: 1.26 Ghz
+	CPU   79: Frequency: 1.25 Ghz
+	CPU   80: Frequency: 1.27 Ghz
+	CPU   81: Frequency: 1.26 Ghz
+	CPU   82: Frequency: 1.27 Ghz
+	CPU   83: Frequency: 1.26 Ghz
+	CPU   84: Frequency: 1.27 Ghz
+	CPU   85: Frequency: 1.26 Ghz
+	CPU   86: Frequency: 1.27 Ghz
+	CPU   87: Frequency: 1.26 Ghz
+	CPU   88: Frequency: 1.27 Ghz
+	CPU   89: Frequency: 1.26 Ghz
+	CPU   90: Frequency: 1.26 Ghz
+	CPU   91: Frequency: 1.25 Ghz
+	CPU   92: Frequency: 1.27 Ghz
+	CPU   93: Frequency: 1.25 Ghz
+	CPU   94: Frequency: 1.27 Ghz
+	CPU   95: Frequency: 1.26 Ghz
+	CPU   96: Frequency: 1.27 Ghz
+	CPU   97: Frequency: 1.25 Ghz
+	CPU   98: Frequency: 1.27 Ghz
+	CPU   99: Frequency: 1.25 Ghz
+	CPU  100: Frequency: 1.27 Ghz
+	CPU  101: Frequency: 1.26 Ghz
+	CPU  102: Frequency: 1.27 Ghz
+	CPU  103: Frequency: 1.25 Ghz
+	CPU  104: Frequency: 1.27 Ghz
+	CPU  105: Frequency: 1.25 Ghz
+	CPU  106: Frequency: 1.26 Ghz
+	CPU  107: Frequency: 1.25 Ghz
+	CPU  108: Frequency: 1.26 Ghz
+	CPU  109: Frequency: 1.26 Ghz
+	CPU  110: Frequency: 1.27 Ghz
+	CPU  111: Frequency: 1.26 Ghz
+	CPU  112: Frequency: 1.27 Ghz
+	CPU  113: Frequency: 1.26 Ghz
+	CPU  114: Frequency: 1.27 Ghz
+	CPU  115: Frequency: 1.26 Ghz
+	CPU  116: Frequency: 1.27 Ghz
+	CPU  117: Frequency: 1.26 Ghz
+	CPU  118: Frequency: 1.27 Ghz
+	CPU  119: Frequency: 1.26 Ghz
+	CPU  120: Frequency: 1.26 Ghz
+	CPU  121: Frequency: 1.25 Ghz
+	CPU  122: Frequency: 1.26 Ghz
+	CPU  123: Frequency: 1.26 Ghz
+	CPU  124: Frequency: 1.26 Ghz
+	CPU  125: Frequency: 1.25 Ghz
+	CPU  126: Frequency: 1.26 Ghz
+	CPU  127: Frequency: 1.25 Ghz
+	CPU  128: Frequency: 1.26 Ghz
+	CPU  129: Frequency: 1.24 Ghz
+	CPU  130: Frequency: 1.26 Ghz
+	CPU  131: Frequency: 1.25 Ghz
+	CPU  132: Frequency: 1.27 Ghz
+	CPU  133: Frequency: 1.25 Ghz
+	CPU  134: Frequency: 1.26 Ghz
+	CPU  135: Frequency: 1.26 Ghz
+	CPU  136: Frequency: 1.25 Ghz
+	CPU  137: Frequency: 1.22 Ghz
+	CPU  138: Frequency: 1.26 Ghz
+	CPU  139: Frequency: 1.25 Ghz
+	CPU  140: Frequency: 1.27 Ghz
+	CPU  141: Frequency: 1.26 Ghz
+	CPU  142: Frequency: 1.27 Ghz
+	CPU  143: Frequency: 1.25 Ghz
+	CPU  144: Frequency: 1.27 Ghz
+	CPU  145: Frequency: 1.25 Ghz
+	CPU  146: Frequency: 1.29 Ghz
+	CPU  147: Frequency: 1.25 Ghz
+	CPU  148: Frequency: 1.26 Ghz
+	CPU  149: Frequency: 1.26 Ghz
+	CPU  150: Frequency: 1.27 Ghz
+	CPU  151: Frequency: 1.25 Ghz
+	CPU  152: Frequency: 1.27 Ghz
+	CPU  153: Frequency: 1.26 Ghz
+	CPU  154: Frequency: 1.26 Ghz
+	CPU  155: Frequency: 1.25 Ghz
+	CPU  156: Frequency: 1.27 Ghz
+	CPU  157: Frequency: 1.27 Ghz
+	CPU  158: Frequency: 1.27 Ghz
+	CPU  159: Frequency: 1.26 Ghz
+	CPU  160: Frequency: 1.26 Ghz
+	CPU  161: Frequency: 1.25 Ghz
+	CPU  162: Frequency: 1.27 Ghz
+	CPU  163: Frequency: 1.25 Ghz
+	CPU  164: Frequency: 1.27 Ghz
+	CPU  165: Frequency: 1.25 Ghz
+	CPU  166: Frequency: 1.26 Ghz
+	CPU  167: Frequency: 1.25 Ghz
+	CPU  168: Frequency: 1.26 Ghz
+	CPU  169: Frequency: 1.25 Ghz
+	CPU  170: Frequency: 1.26 Ghz
+	CPU  171: Frequency: 1.24 Ghz
+	CPU  172: Frequency: 1.27 Ghz
+	CPU  173: Frequency: 1.30 Ghz
+	CPU  174: Frequency: 1.27 Ghz
+	CPU  175: Frequency: 1.26 Ghz
+	CPU  176: Frequency: 1.27 Ghz
+	CPU  177: Frequency: 1.26 Ghz
+	CPU  178: Frequency: 1.27 Ghz
+	CPU  179: Frequency: 1.26 Ghz
+	CPU  180: Frequency: 1.27 Ghz
+	CPU  181: Frequency: 1.26 Ghz
+	CPU  182: Frequency: 1.27 Ghz
+	CPU  183: Frequency: 1.26 Ghz
+	CPU  184: Frequency: 1.28 Ghz
+	CPU  185: Frequency: 1.25 Ghz
+	CPU  186: Frequency: 1.27 Ghz
+	CPU  187: Frequency: 1.26 Ghz
+	CPU  188: Frequency: 1.26 Ghz
+	CPU  189: Frequency: 1.25 Ghz
+	CPU  190: Frequency: 1.26 Ghz
+	CPU  191: Frequency: 1.25 Ghz
+	CPU  192: Frequency: 1.26 Ghz
+	CPU  193: Frequency: 1.24 Ghz
+	CPU  194: Frequency: 1.27 Ghz
+	CPU  195: Frequency: 1.25 Ghz
+	CPU  196: Frequency: 1.27 Ghz
+	CPU  197: Frequency: 1.25 Ghz
+	CPU  198: Frequency: 1.26 Ghz
+	CPU  199: Frequency: 1.26 Ghz
+	CPU  200: Frequency: 1.25 Ghz
+	CPU  201: Frequency: 1.21 Ghz
+	CPU  202: Frequency: 1.27 Ghz
+	CPU  203: Frequency: 1.26 Ghz
+	CPU  204: Frequency: 1.27 Ghz
+	CPU  205: Frequency: 1.25 Ghz
+	CPU  206: Frequency: 1.27 Ghz
+	CPU  207: Frequency: 1.25 Ghz
+	CPU  208: Frequency: 1.27 Ghz
+	CPU  209: Frequency: 1.26 Ghz
+	CPU  210: Frequency: 1.27 Ghz
+	CPU  211: Frequency: 1.25 Ghz
+	CPU  212: Frequency: 1.26 Ghz
+	CPU  213: Frequency: 1.25 Ghz
+	CPU  214: Frequency: 1.27 Ghz
+	CPU  215: Frequency: 1.26 Ghz
+	CPU  216: Frequency: 1.27 Ghz
+	CPU  217: Frequency: 1.26 Ghz
+	CPU  218: Frequency: 1.27 Ghz
+	CPU  219: Frequency: 1.26 Ghz
+	CPU  220: Frequency: 1.26 Ghz
+	CPU  221: Frequency: 1.25 Ghz
+	CPU  222: Frequency: 1.27 Ghz
+	CPU  223: Frequency: 1.26 Ghz
+	CPU  224: Frequency: 1.27 Ghz
+	CPU  225: Frequency: 1.25 Ghz
+	CPU  226: Frequency: 1.27 Ghz
+	CPU  227: Frequency: 1.25 Ghz
+	CPU  228: Frequency: 1.27 Ghz
+	CPU  229: Frequency: 1.26 Ghz
+	CPU  230: Frequency: 1.26 Ghz
+	CPU  231: Frequency: 1.26 Ghz
+	CPU  232: Frequency: 1.27 Ghz
+	CPU  233: Frequency: 1.26 Ghz
+	CPU  234: Frequency: 1.25 Ghz
+	CPU  235: Frequency: 1.25 Ghz
+	CPU  236: Frequency: 1.26 Ghz
+	CPU  237: Frequency: 1.25 Ghz
+	CPU  238: Frequency: 1.27 Ghz
+	CPU  239: Frequency: 1.26 Ghz
+	CPU  240: Frequency: 1.26 Ghz
+	CPU  241: Frequency: 1.26 Ghz
+	CPU  242: Frequency: 1.27 Ghz
+	CPU  243: Frequency: 1.25 Ghz
+	CPU  244: Frequency: 1.26 Ghz
+	CPU  245: Frequency: 1.25 Ghz
+	CPU  246: Frequency: 1.27 Ghz
+	CPU  247: Frequency: 1.26 Ghz
+	CPU  248: Frequency: 1.26 Ghz
+	CPU  249: Frequency: 1.25 Ghz
+	CPU  250: Frequency: 1.26 Ghz
+	CPU  251: Frequency: 1.25 Ghz
+	CPU  252: Frequency: 1.26 Ghz
+	CPU  253: Frequency: 1.25 Ghz
+	CPU  254: Frequency: 1.26 Ghz
+	CPU  255: Frequency: 1.26 Ghz
+#############   PASSED  CPU-Info   #############
+Running r_pstates
+#############   STARTED   P-States   #############
+******* Available P-States *******
+P0 = 1301 MHz
+P1 = 1300 MHz
+P2 = 1200 MHz
+P3 = 1100 MHz
+P4 = 1000 MHz
+**********************************
+******* Current P-States *******
+CPU0 = P3:1100 MHz
+CPU1 = P3:1100 MHz
+CPU2 = P3:1100 MHz
+CPU3 = P3:1100 MHz
+CPU4 = P3:1100 MHz
+CPU5 = P3:1100 MHz
+CPU6 = P3:1100 MHz
+CPU7 = P3:1100 MHz
+CPU8 = P3:1100 MHz
+CPU9 = P3:1100 MHz
+CPU10 = P3:1100 MHz
+CPU11 = P3:1100 MHz
+CPU12 = P3:1100 MHz
+CPU13 = P3:1100 MHz
+CPU14 = P3:1100 MHz
+CPU15 = P3:1100 MHz
+CPU16 = P3:1100 MHz
+CPU17 = P3:1100 MHz
+CPU18 = P3:1100 MHz
+CPU19 = P3:1100 MHz
+CPU20 = P3:1100 MHz
+CPU21 = P3:1100 MHz
+CPU22 = P3:1100 MHz
+CPU23 = P3:1100 MHz
+CPU24 = P3:1100 MHz
+CPU25 = P3:1100 MHz
+CPU26 = P3:1100 MHz
+CPU27 = P3:1100 MHz
+CPU28 = P3:1100 MHz
+CPU29 = P3:1100 MHz
+CPU30 = P3:1100 MHz
+CPU31 = P3:1100 MHz
+CPU32 = P3:1100 MHz
+CPU33 = P3:1100 MHz
+CPU34 = P3:1100 MHz
+CPU35 = P3:1100 MHz
+CPU36 = P3:1100 MHz
+CPU37 = P3:1100 MHz
+CPU38 = P3:1100 MHz
+CPU39 = P3:1100 MHz
+CPU40 = P3:1100 MHz
+CPU41 = P3:1100 MHz
+CPU42 = P3:1100 MHz
+CPU43 = P3:1100 MHz
+CPU44 = P3:1100 MHz
+CPU45 = P3:1100 MHz
+CPU46 = P3:1100 MHz
+CPU47 = P3:1100 MHz
+CPU48 = P3:1100 MHz
+CPU49 = P3:1100 MHz
+CPU50 = P3:1100 MHz
+CPU51 = P3:1100 MHz
+CPU52 = P3:1100 MHz
+CPU53 = P3:1100 MHz
+CPU54 = P3:1100 MHz
+CPU55 = P3:1100 MHz
+CPU56 = P3:1100 MHz
+CPU57 = P3:1100 MHz
+CPU58 = P3:1100 MHz
+CPU59 = P3:1100 MHz
+CPU60 = P3:1100 MHz
+CPU61 = P3:1100 MHz
+CPU62 = P3:1100 MHz
+CPU63 = P3:1100 MHz
+CPU64 = P3:1100 MHz
+CPU65 = P3:1100 MHz
+CPU66 = P3:1100 MHz
+CPU67 = P3:1100 MHz
+CPU68 = P3:1100 MHz
+CPU69 = P3:1100 MHz
+CPU70 = P3:1100 MHz
+CPU71 = P3:1100 MHz
+CPU72 = P3:1100 MHz
+CPU73 = P3:1100 MHz
+CPU74 = P3:1100 MHz
+CPU75 = P3:1100 MHz
+CPU76 = P3:1100 MHz
+CPU77 = P3:1100 MHz
+CPU78 = P3:1100 MHz
+CPU79 = P3:1100 MHz
+CPU80 = P3:1100 MHz
+CPU81 = P3:1100 MHz
+CPU82 = P3:1100 MHz
+CPU83 = P3:1100 MHz
+CPU84 = P3:1100 MHz
+CPU85 = P3:1100 MHz
+CPU86 = P3:1100 MHz
+CPU87 = P3:1100 MHz
+CPU88 = P3:1100 MHz
+CPU89 = P3:1100 MHz
+CPU90 = P3:1100 MHz
+CPU91 = P3:1100 MHz
+CPU92 = P3:1100 MHz
+CPU93 = P3:1100 MHz
+CPU94 = P3:1100 MHz
+CPU95 = P3:1100 MHz
+CPU96 = P3:1100 MHz
+CPU97 = P3:1100 MHz
+CPU98 = P3:1100 MHz
+CPU99 = P3:1100 MHz
+CPU100 = P3:1100 MHz
+CPU101 = P3:1100 MHz
+CPU102 = P3:1100 MHz
+CPU103 = P3:1100 MHz
+CPU104 = P3:1100 MHz
+CPU105 = P3:1100 MHz
+CPU106 = P3:1100 MHz
+CPU107 = P3:1100 MHz
+CPU108 = P3:1100 MHz
+CPU109 = P3:1100 MHz
+CPU110 = P3:1100 MHz
+CPU111 = P3:1100 MHz
+CPU112 = P3:1100 MHz
+CPU113 = P3:1100 MHz
+CPU114 = P3:1100 MHz
+CPU115 = P3:1100 MHz
+CPU116 = P3:1100 MHz
+CPU117 = P3:1100 MHz
+CPU118 = P3:1100 MHz
+CPU119 = P3:1100 MHz
+CPU120 = P3:1100 MHz
+CPU121 = P3:1100 MHz
+CPU122 = P3:1100 MHz
+CPU123 = P3:1100 MHz
+CPU124 = P3:1100 MHz
+CPU125 = P3:1100 MHz
+CPU126 = P3:1100 MHz
+CPU127 = P3:1100 MHz
+CPU128 = P3:1100 MHz
+CPU129 = P3:1100 MHz
+CPU130 = P3:1100 MHz
+CPU131 = P3:1100 MHz
+CPU132 = P3:1100 MHz
+CPU133 = P3:1100 MHz
+CPU134 = P3:1100 MHz
+CPU135 = P3:1100 MHz
+CPU136 = P3:1100 MHz
+CPU137 = P3:1100 MHz
+CPU138 = P3:1100 MHz
+CPU139 = P3:1100 MHz
+CPU140 = P3:1100 MHz
+CPU141 = P3:1100 MHz
+CPU142 = P3:1100 MHz
+CPU143 = P3:1100 MHz
+CPU144 = P3:1100 MHz
+CPU145 = P3:1100 MHz
+CPU146 = P3:1100 MHz
+CPU147 = P3:1100 MHz
+CPU148 = P3:1100 MHz
+CPU149 = P3:1100 MHz
+CPU150 = P3:1100 MHz
+CPU151 = P3:1100 MHz
+CPU152 = P3:1100 MHz
+CPU153 = P3:1100 MHz
+CPU154 = P3:1100 MHz
+CPU155 = P3:1100 MHz
+CPU156 = P3:1100 MHz
+CPU157 = P3:1100 MHz
+CPU158 = P3:1100 MHz
+CPU159 = P3:1100 MHz
+CPU160 = P3:1100 MHz
+CPU161 = P3:1100 MHz
+CPU162 = P3:1100 MHz
+CPU163 = P3:1100 MHz
+CPU164 = P3:1100 MHz
+CPU165 = P3:1100 MHz
+CPU166 = P3:1100 MHz
+CPU167 = P3:1100 MHz
+CPU168 = P3:1100 MHz
+CPU169 = P3:1100 MHz
+CPU170 = P3:1100 MHz
+CPU171 = P3:1100 MHz
+CPU172 = P3:1100 MHz
+CPU173 = P3:1100 MHz
+CPU174 = P3:1100 MHz
+CPU175 = P3:1100 MHz
+CPU176 = P3:1100 MHz
+CPU177 = P3:1100 MHz
+CPU178 = P3:1100 MHz
+CPU179 = P3:1100 MHz
+CPU180 = P3:1100 MHz
+CPU181 = P3:1100 MHz
+CPU182 = P3:1100 MHz
+CPU183 = P3:1100 MHz
+CPU184 = P3:1100 MHz
+CPU185 = P3:1100 MHz
+CPU186 = P3:1100 MHz
+CPU187 = P3:1100 MHz
+CPU188 = P3:1100 MHz
+CPU189 = P3:1100 MHz
+CPU190 = P3:1100 MHz
+CPU191 = P3:1100 MHz
+CPU192 = P3:1100 MHz
+CPU193 = P3:1100 MHz
+CPU194 = P3:1100 MHz
+CPU195 = P3:1100 MHz
+CPU196 = P3:1100 MHz
+CPU197 = P3:1100 MHz
+CPU198 = P3:1100 MHz
+CPU199 = P3:1100 MHz
+CPU200 = P3:1100 MHz
+CPU201 = P3:1100 MHz
+CPU202 = P3:1100 MHz
+CPU203 = P3:1100 MHz
+CPU204 = P3:1100 MHz
+CPU205 = P3:1100 MHz
+CPU206 = P3:1100 MHz
+CPU207 = P3:1100 MHz
+CPU208 = P3:1100 MHz
+CPU209 = P3:1100 MHz
+CPU210 = P3:1100 MHz
+CPU211 = P3:1100 MHz
+CPU212 = P3:1100 MHz
+CPU213 = P3:1100 MHz
+CPU214 = P3:1100 MHz
+CPU215 = P3:1100 MHz
+CPU216 = P3:1100 MHz
+CPU217 = P3:1100 MHz
+CPU218 = P3:1100 MHz
+CPU219 = P3:1100 MHz
+CPU220 = P3:1100 MHz
+CPU221 = P3:1100 MHz
+CPU222 = P3:1100 MHz
+CPU223 = P3:1100 MHz
+CPU224 = P3:1100 MHz
+CPU225 = P3:1100 MHz
+CPU226 = P3:1100 MHz
+CPU227 = P3:1100 MHz
+CPU228 = P3:1100 MHz
+CPU229 = P3:1100 MHz
+CPU230 = P3:1100 MHz
+CPU231 = P3:1100 MHz
+CPU232 = P3:1100 MHz
+CPU233 = P3:1100 MHz
+CPU234 = P3:1100 MHz
+CPU235 = P3:1100 MHz
+CPU236 = P3:1100 MHz
+CPU237 = P3:1100 MHz
+CPU238 = P3:1100 MHz
+CPU239 = P3:1100 MHz
+CPU240 = P3:1100 MHz
+CPU241 = P3:1100 MHz
+CPU242 = P3:1100 MHz
+CPU243 = P3:1100 MHz
+CPU244 = P3:1100 MHz
+CPU245 = P3:1100 MHz
+CPU246 = P3:1100 MHz
+CPU247 = P3:1100 MHz
+CPU248 = P3:1100 MHz
+CPU249 = P3:1100 MHz
+CPU250 = P3:1100 MHz
+CPU251 = P3:1100 MHz
+CPU252 = P3:1100 MHz
+CPU253 = P3:1100 MHz
+CPU254 = P3:1100 MHz
+CPU255 = P3:1100 MHz
+********************************
+#############   PASSED  P-States   #############
+Running system
+#############   STARTED   System info   #############
+Suffix: b7SGt_
+Directory name: /tmp/knl_debug.b7SGt_
+Tar filename: /tmp/knl_debug_dump-corbiere-27_Nov_2019_22_30_37.b7SGt_.tar.gz
+
+Getting all system info
+
+Getting general system info
+
+Getting dmesg
+
+Getting BIOS dump
+
+Getting /proc/cpuinfo
+
+Getting list of installed packages
+
+Copying ACPI tables
+
+Copying /var/log/messages
+
+Copying kernel config
+
+Getting lspci
+
+Packing content
+
+Please save /tmp/knl_debug_dump-corbiere-27_Nov_2019_22_30_37.b7SGt_.tar.gz and contact Customer Support.
+
+#############   PASSED  System info   #############
+#############   PASSED  All   #############
+Interactive = False

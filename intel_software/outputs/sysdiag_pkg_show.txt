@@ -1,0 +1,17 @@
+Package: sysdiag
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 105
+Origin: Intel(R) Xeon Phi(TM) processor software
+Maintainer: Intel Corporation <https://supporttickets.intel.com>
+Architecture: amd64
+Version: 2.3.0+xpps-2.3.0.482
+Depends: libc6 (>= 2.7), python2.7, python:any (>= 2.7.5-5~), numactl
+Description: Intel(R) Xeon Phi(TM) processor diagnosing tool
+ The SysDiag tool provides a variety of information and diagnostics
+ for the processor.  SysDiag also monitors DDR, MCDRAM and PCI-E
+ information. It also monitors temperature  and performance state
+ data of the CPU.
+Description-md5: 8dda5314d332da93ea3ab83cfc519771
+

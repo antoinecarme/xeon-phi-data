@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installmodules/10.7.2ubuntu2
+if [ "$1" = "configure" ]; then
+	if [ -e /boot/System.map-4.13.0-16-generic ]; then
+		depmod -a -F /boot/System.map-4.13.0-16-generic 4.13.0-16-generic || true
+	fi
+fi
+# End automatically added section

@@ -1,0 +1,205 @@
+#! /usr/bin/python
+#
+# Copyright 2012-2017, Intel Corporation, All Rights Reserved.
+#
+# This software is supplied under the terms of a license
+# agreement or nondisclosure agreement with Intel Corp.
+# and may not be copied or disclosed except in accordance
+# with the terms of that agreement.
+#
+#  Author:  Christopher M. Cantalupo
+#
+
+"""
+NAME
+    micpinfo - Prints out information relevant to the performance of a
+    system.
+
+SYNOPSIS
+    micpinfo (-h | --help)
+        Print this help message.
+
+    micpinfo --version
+        Print the version.
+
+    micpinfo -R help
+        Print the tags of installed reference files.
+
+    micpinfo --app help
+        Print the list of all applications.
+
+    micpinfo -R tag --app help
+        Print the list of available applications in the given tag.
+
+    micpinfo pickle --app help
+        Print the list of available applications in the given pickle.
+
+    micpinfo [--app appList] [-R tag | pickle]
+        Print out system information.
+
+    micpinfo --hwhash [-R tag | pickle]
+        Print a hash created from string describing system information
+        critical to performance.
+
+DESCRIPTION
+    Displays information relevant to the performance of a system.
+    There are a collection of applications that are run and the output
+    of these applications is stored in reference pickle files.  You
+    can select which of the applications will be used with the --app
+    option, otherwise all applications are used.  The --hwhash option
+    can be used to insure that two systems should have similar
+    performance characteristics by comparing the hash values.
+
+    --app appList | -a appList
+        Select a subset of all applications with a colon separated
+        list.
+        -R tag or a pickle can be use with --app help to list the
+        available application in the given tag or pickle.
+
+    --hwhash
+        Displays a hash generated from the information relevant to
+        performance of a system.
+
+    -R tag | --ref tag
+        Display information from an installed reference file with the
+        specified tag rather than from a micp_run_stats file or from
+        the system.
+
+EXAMPLES
+    micpinfo
+        Prints out information relevant to performance of the system.
+
+    micpinfo --app conf
+    micpinfo -a conf
+        Displays the mic configuration files for the system running
+        the command.
+
+    micpinfo --app dmidecode example.pkl
+    micpinfo -a dmidecode example.pkl
+        Displays the output of an array of dmidecode calls for the
+        system that generated the example.pkl file.
+
+    micpinfo --hwhash
+        Creates a hash from the string that describes the system
+        running the command.
+
+    micpinfo --hwhash example.pkl
+        Creates a hash from the string that describes the system that
+        generated the example.pkl file.
+
+ENVIRONMENT
+    MIC_PERF_DATA (default defined in micp.version)
+        If set the reference data located in this directory will be
+        used with the -R flag.
+
+COPYRIGHT
+    Copyright 2012-2017, Intel Corporation, All Rights Reserved.
+
+"""
+
+import sys
+import os
+import cPickle
+import getopt
+
+import micp.info as micp_info
+import micp.stats as micp_stats
+import micp.common as micp_common
+
+try:
+    import micp.version as micp_version
+    micpVersion = micp_version.__version__
+except ImportError:
+    sys.stderr.write('WARNING:  Could not locate micp version.py file\n')
+    micpVersion = '0.0.0'
+
+if __name__ == '__main__':
+    if(len(sys.argv) > 1 and sys.argv[1] == '--version'):
+        print micpVersion
+        sys.exit(0)
+
+    try:
+        optList, pickleList = getopt.gnu_getopt(sys.argv[1:], 'ha:R:', ['help', 'app=', 'hwhash', 'ref='])
+    except getopt.GetoptError as err:
+        sys.stderr.write('ERROR:  {0}\n'.format(err))
+        sys.stderr.write('        For help run: {0} --help\n'.format(sys.argv[0]))
+        sys.exit(2)
+
+    appList = None
+    printHash = False
+    refTag = None
+    for opt, arg in optList:
+        if opt in ('-h', '--help'):
+            print __doc__
+            sys.exit(0)
+        elif opt in ('-a', '--app'):
+            appList = arg.split(':')
+        elif opt == '--hwhash':
+            printHash = True
+        elif opt in ('-R', '--ref'):
+            refTag = arg
+        else:
+            sys.stderr.write('ERROR: Unhandled option {0}\n'.format(opt))
+            sys.stderr.write('For help run: {0} --help\n'.format(sys.argv[0]))
+            sys.exit(2)
+
+    if len(pickleList) > 1:
+        sys.stderr.write('ERROR: More than one pickle file given\n')
+        sys.stderr.write('For help run: {0} --help\n'.format(sys.argv[0]))
+        sys.exit(2)
+
+    if pickleList and refTag:
+        sys.stderr.write('ERROR:  Both pickle file and reference tag specified\n')
+        sys.stderr.write('For help run: {0} --help\n'.format(sys.argv[0]))
+        sys.exit(2)
+
+    # assume this system has a KNX coprocessor attached, verify assumption
+    # and update if needed
+    default_device = 0
+    if micp_common.is_selfboot_platform():
+        default_device = -1
+
+    if not pickleList and not refTag:
+        info = micp_info.Info(default_device)
+    if pickleList:
+        try:
+            fid = open(pickleList[0], 'rb')
+        except IOError:
+            sys.stderr.write('ERROR:  Could not open file named {0}\n'.format(pickleList[0]))
+            sys.exit(3)
+        stats = cPickle.load(fid)
+        fid.close()
+        info = stats.info
+    elif refTag:
+        store = micp_stats.StatsCollectionStore()
+        if refTag == 'help':
+            allTags = store.stored_tags()
+            if allTags:
+                micp_common.exit_application('\n'.join(allTags), 0)
+            else:
+                micp_common.exit_application(micp_common.NO_REFERENCE_TAGS_ERROR, 3)
+        ref = store.get_by_tag(refTag)
+        if not ref:
+            sys.stderr.write('ERROR:  Could not find reference tag {0} in store\n'.format(refTag))
+            sys.exit(3)
+        info = ref.info
+    else:
+        info = micp_info.Info(default_device)
+
+
+    if printHash:
+        print info.system_hw_hash()
+    else:
+        if appList == ['help']:
+            print 'Available applications (any substring is matched):'
+            print '    ' + '\n    '.join(info.get_app_list())
+        elif appList:
+            try:
+                print info.__str__(appList)
+            except LookupError as err:
+                sys.stderr.write('ERROR:  {0}\n'.format(err))
+                sys.stderr.write('For help run: {0} --app help'.format(sys.argv[0]))
+                sys.exit(4)
+        else:
+            print 'micpinfo version:  {0}\n'.format(micpVersion)
+            print info

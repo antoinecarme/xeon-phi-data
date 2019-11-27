@@ -1,0 +1,216 @@
+#! /usr/bin/python
+#
+# Copyright 2012-2017, Intel Corporation, All Rights Reserved.
+#
+# This software is supplied under the terms of a license
+# agreement or nondisclosure agreement with Intel Corp.
+# and may not be copied or disclosed except in accordance
+# with the terms of that agreement.
+#
+#  Author:  Christopher M. Cantalupo
+#
+
+
+"""
+NAME
+    micpcsv - Converts performance data stored in pickle files created
+    by micprun into comma separated value (CSV) formatted tables.
+
+SYNOPSIS
+    micpcsv -h | --help
+        Print this help message.
+
+    micpcsv --version
+        Print the version.
+
+    micpcsv -R help | --ref help
+        Print tags of installed reference files.
+
+    micpcsv [-o outdir] [-s] [-a] pickle0 [pickle1] [pickle2] ...
+        Create CSV formatted table from the performance data stored in
+        pickle files listed.
+
+    micpcsv [-o outdir] [-s] [-a] -R tag  [pickle0] [pickle1] [pickle2] ...
+        Create CSV formatted table from installed reference data and
+        any pickle files listed.
+
+    micpcsv [-o outdir]
+        Create a summary table in CSV format from the data distributed
+        with the package.
+
+DESCRIPTION
+    When pickle files are listed on the end of the command line then
+    the data from these files are aggregated and used to generate CSV
+    tables.
+
+    The -R option allows the selection of reference data from the
+    installed location.  The kernels and offload methods included in
+    the first file determine the kernel and offload methods that will
+    be plotted, and if no files are listed then the first reference
+    tag given will determine these.
+
+    When run without listing pickle files or reference tags on the
+    command line a summary table is produced.  This table contains the
+    highest performance values measured for each kernel in each of
+    pickle files stored in the distributed micperf/data directory which
+    have the string "scaling" in their tag.  The values of the scaling
+    parameter that produced these measurements are included in the
+    table.
+
+    -R tag | --ref tag
+        Include installed reference data from the given tag.  Note
+        that mutilple reference tags can be selected with a colon
+        separated list.
+    -o outdir | --output outdir
+        Without the -o flag the output is printed to standard output.
+        In this case, if more than one table is produced these are
+        separated in the standard output by two line breaks.  If the
+        -o flag is used then each table is output to a different file
+        in the output directory specified (the directory must exist).
+    -a | --all
+        When the -a flag is specified then all recorded data are
+        included in the output.  The default behavior is to only
+        select "rolled up" data.  For the distributed kernels there
+        are no data that are not "rolled up" so the result with and
+        without the -a flag is essentially the same.
+    -s | --short
+        When the -s flag is specified then the output is formatted in
+        an abbreviated form that aggregates all output to a single
+        table.  If the -o flag is also specified a file named
+        short_form.csv is produced which contains the aggregated
+        table.
+
+        If both -s and -a are specified, micpcsv will not return an
+        error, however -a is going be ignored and micpcsv would behave
+        as if only -s had been specified.
+
+ENVIRONMENT
+    MIC_PERF_DATA (default defined in micp.version)
+        If set the reference data located in this directory will be
+        used with the -R flag.
+
+COPYRIGHT
+    Copyright 2012-2017, Intel Corporation, All Rights Reserved.
+
+"""
+
+import sys
+import os
+import cPickle
+import getopt
+
+import micp.stats as micp_stats
+import micp.common as micp_common
+
+
+if __name__ == '__main__':
+    if(len(sys.argv) > 1 and sys.argv[1] == '--version'):
+        import micp.version as micp_version
+        print micp_version.__version__
+        sys.exit(0)
+
+    try:
+        optList, pickleList = getopt.gnu_getopt(sys.argv[1:], 'haso:R:',
+                          ['help', 'all', 'short', 'output=', 'ref='])
+    except getopt.GetoptError as err:
+        sys.stderr.write('ERROR:  {0}\n'.format(err))
+        sys.stderr.write('        For help run: {0} --help\n'.format(sys.argv[0]))
+        sys.exit(2)
+
+    outDir = ''
+    rolledUp = True
+    shortForm = False
+    refTagList = None
+    for opt, arg in optList:
+        if opt in ('-h', '--help'):
+            print __doc__
+            sys.exit(0)
+        elif opt in ('-o', '--output'):
+            outDir = arg
+        elif opt in ('-a', '--all'):
+            rolledUp = False
+        elif opt in ('-s', '--short'):
+            shortForm = True
+        elif opt in ('-R', '--ref'):
+            if arg == 'help':
+                store = micp_stats.StatsCollectionStore()
+                allTags = store.stored_tags()
+                if allTags:
+                    micp_common.exit_application('\n'.join(allTags), 0)
+                else:
+                    micp_common.exit_application(micp_common.NO_REFERENCE_TAGS_ERROR, 3)
+            refTagList = arg.split(':')
+        else:
+            sys.stderr.write('ERROR:  Unhandled option {0}\n'.format(opt))
+            sys.stderr.write('For help run: {0} --help\n'.format(sys.argv[0]))
+            sys.exit(2)
+
+    if outDir:
+        if not os.path.isdir(outDir):
+            error = 'ERROR: "{0}" is not a valid directory'.format(outDir)
+            micp_common.exit_application(error, 3)
+
+        try:
+            testFile = os.path.join(outDir, 'deleteme')
+            fid = open(testFile,'w')
+            fid.close()
+            os.remove(testFile)
+        except IOError as err:
+            sys.stderr.write('ERROR: unable to create a test file in output directory\n')
+            sys.stderr.write('       -o option must be a writable directory\n')
+            sys.exit(3)
+
+    if not pickleList and not refTagList:
+        scs = micp_stats.StatsCollectionStore()
+        result = scs.csv()
+        if outDir == '':
+            print result
+        else:
+            fileName = os.path.join(outDir, 'summary.csv')
+            fid = open(fileName, 'w')
+            fid.write(result)
+            fid.close()
+        sys.exit(0)
+
+    collection = None
+    if pickleList:
+        for fileName in pickleList:
+            try:
+                cc = cPickle.load(open(fileName, 'rb'))
+            except IOError:
+                error_msg = micp_common.NON_EXISTENT_FILE_ERROR.format(fileName)
+                micp_common.exit_application(error_msg, 3)
+            if collection:
+                collection.extend(cc)
+            else:
+                collection = cc
+
+    if refTagList:
+        store = micp_stats.StatsCollectionStore()
+        for tag in refTagList:
+            cc = store.get_by_tag(tag)
+            if not cc:
+                sys.stderr.write('ERROR: Could not find reference tag {0} in store\n'.format(tag))
+                sys.exit(3)
+            if collection:
+                collection.extend(cc)
+            else:
+                collection = cc
+
+    if not outDir:
+        if shortForm:
+            print collection.csv_short_form()
+        else:
+            print collection.csv(rolledUp)
+    else:
+        if shortForm:
+            fileName = os.path.join(outDir, 'short_form.csv')
+            fid = open(fileName, 'w')
+            fid.write(collection.csv_short_form())
+            fid.close()
+        else:
+            try:
+                collection.csv_write(outDir, rolledUp)
+            except IOError:
+                error_msg = micp_common.NON_EXISTENT_OUT_DIRECTORY_ERROR.format(outDir)
+                micp_common.exit_application(error_msg, 3)

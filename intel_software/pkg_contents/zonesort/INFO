@@ -1,0 +1,19 @@
+ new Debian package, version 2.0.
+ size 8242 bytes: control archive=849 bytes.
+     581 bytes,    13 lines      control              
+     168 bytes,     2 lines      md5sums              
+     275 bytes,     9 lines   *  postinst             #!/bin/sh
+     237 bytes,     7 lines   *  postrm               #!/bin/sh
+ Package: zonesort
+ Version: 1.0+xpps-2.3.0.482
+ Architecture: amd64
+ Origin: Intel(R) Xeon Phi(TM) processor software
+ Maintainer: Intel Corporation <https://supporttickets.intel.com>
+ Installed-Size: 39
+ Section: admin
+ Priority: optional
+ Description: Zone free list sorter
+  The zonesort module provides mechanism to change order in a list of free pages kept
+  in Linux kernel buddy allocator. The order is changed so to minimize possible
+  page collisions later when those pages are served to the application.
+  The algorithm assumes that the system has up to 16GB of direct-mapped cache.

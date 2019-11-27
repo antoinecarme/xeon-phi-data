@@ -1,0 +1,10 @@
+Copyright 2012-2017, Intel Corporation, All Rights Reserved.
+
+Intel(R) Many Integrated Core (Intel(R) MIC) Platform Software Stack (MPSS)
+Intel(R) Xeon Phi(TM) Processor Software
+
+Intel, Xeon, and Intel Xeon Phi are trademarks of Intel Corporation in
+the U.S. and/or other countries
+
+These files are available under the Intel(R) Xeon Phi(TM) Processor Software
+License included with the Intel(R) Xeon Phi(TM) Processor Software package.

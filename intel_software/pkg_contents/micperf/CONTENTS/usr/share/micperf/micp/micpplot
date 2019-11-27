@@ -1,0 +1,147 @@
+#! /usr/bin/python
+#
+# Copyright 2012-2017, Intel Corporation, All Rights Reserved.
+#
+# This software is supplied under the terms of a license
+# agreement or nondisclosure agreement with Intel Corp.
+# and may not be copied or disclosed except in accordance
+# with the terms of that agreement.
+#
+#  Author:  Christopher M. Cantalupo
+#
+
+"""
+NAME
+    micpplot - plot the performance data from a pickle file.
+
+SYNOPSIS
+    micpplot -h | --help
+        Print this help message.
+
+    micpplot --version
+        Print the version.
+
+    micpplot -R help
+        Print tags of installed reference files.
+
+    micpplot [-o outdir] pickle0 [pickle1] [pickle2] ...
+        Plot the performance statistics for the pickle(s).
+
+    micpplot [-o outdir] -R tag  [pickle0] [pickle1] [pickle2] ...
+        Plot the performance statistics from installed reference data
+        and any pickle files listed.
+
+DESCRIPTION
+    Plots the performance statistics stored within pickles files, and
+    can compare the performance statistics in multiple pickle files.
+    By default these are plotted to the screen one at a time in an
+    interactive matplotlib window.  If all kernels stored in the
+    pickle file have the same x and y axes they will all be
+    over-plotted in an additional figure not otherwise produced.
+
+    The kernels and offload methods included in the first file
+    determine the kernel and offload methods that will be plotted, and
+    if no files are listed then the first tag given will determine
+    these.
+
+    -o outdir
+        Creates .png files of each plot in the directory specified.
+        When -o is given no plotting windows are opened.
+    -R tag
+        Plot installed reference data from the given tag.  Multiple
+        reference tags can be selected by passing a colon separated
+        list.
+
+ENVIRONMENT
+    MIC_PERF_DATA (default defined in micp.version)
+        If set the reference data located in this directory will be
+        used with the -R flag.
+
+COPYRIGHT
+    Copyright 2012-2017, Intel Corporation, All Rights Reserved.
+
+"""
+
+import os
+import sys
+import cPickle
+import getopt
+
+import micp.stats as micp_stats
+import micp.common as micp_common
+
+if __name__ == '__main__':
+    if(len(sys.argv) > 1 and sys.argv[1] == '--version'):
+        import micp.version as micp_version
+        print micp_version.__version__
+        sys.exit(0)
+
+    try:
+        optList, pickleList = getopt.gnu_getopt(sys.argv[1:], 'ho:R:',
+                                        ['help', 'output=', 'ref='])
+    except getopt.GetoptError as err:
+        sys.stderr.write('ERROR:  {0}\n'.format(err))
+        sys.stderr.write('        For help run: {0} --help\n'.format(sys.argv[0]))
+        sys.exit(2)
+
+    outDir = ''
+    refTagList = []
+    for opt, arg in optList:
+        if opt in ('-h', '--help'):
+            print __doc__
+            sys.exit(0)
+        elif opt in ('-o', '--output'):
+            outDir = arg
+            if not os.path.isdir(outDir):
+                sys.stderr.write('ERROR:  Output directory "{0}" does not exist\n'.format(outDir))
+                sys.stderr.write('        For help run: {0} --help\n'.format(sys.argv[0]))
+                sys.exit(2)
+        elif opt in ('-R', '--ref'):
+            if arg == 'help':
+                store = micp_stats.StatsCollectionStore()
+                allTags = store.stored_tags()
+                if allTags:
+                    micp_common.exit_application('\n'.join(allTags), 0)
+                else:
+                    micp_common.exit_application(micp_common.NO_REFERENCE_TAGS_ERROR, 3)
+            refTagList = arg.split(':')
+        else:
+            sys.stderr.write('ERROR:  Unhandled option {0}\n'.format(opt))
+            sys.stderr.write('        For help run: {0} --help\n'.format(sys.argv[0]))
+            sys.exit(2)
+
+    if not pickleList and not refTagList:
+        sys.stderr.write('ERROR:  No files given\n')
+        sys.exit(2)
+
+    collection = None
+    if pickleList:
+        for fileName in pickleList:
+            try:
+                cc = cPickle.load(open(fileName, 'rb'))
+            except (IOError,EOFError,cPickle.UnpicklingError):
+                error_msg = micp_common.NON_EXISTENT_FILE_ERROR.format(fileName)
+                micp_common.exit_application(error_msg, 3)
+
+            if collection:
+                collection.extend(cc)
+            else:
+                collection = cc
+
+    if refTagList:
+        store = micp_stats.StatsCollectionStore()
+        for tag in refTagList:
+            cc = store.get_by_tag(tag)
+            if not cc:
+                sys.stderr.write('ERROR:  Could not find reference tag {0} in store\n'.format(tag))
+                sys.exit(3)
+            if collection:
+                collection.extend(cc)
+            else:
+                collection = cc
+
+    try:
+        collection.plot(outDir)
+        collection.plot_all(outDir)
+    except NameError:
+        pass

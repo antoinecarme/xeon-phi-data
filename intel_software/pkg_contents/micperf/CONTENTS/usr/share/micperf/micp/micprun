@@ -1,0 +1,535 @@
+#! /usr/bin/python
+#
+# Copyright 2012-2017, Intel Corporation, All Rights Reserved.
+#
+# This software is supplied under the terms of a license
+# agreement or nondisclosure agreement with Intel Corp.
+# and may not be copied or disclosed except in accordance
+# with the terms of that agreement.
+#
+#  Author:  Christopher M. Cantalupo
+#
+
+"""
+NAME
+    micprun - Run the micperf workloads.
+
+SYNOPSIS
+    micprun -h | --help
+      Print this help message.
+
+    micprun --version
+      Print the version.
+
+    micprun [-v level] [-o outdir] [-t outtag] [-x offload]* [-d device] [-e plugin] -k kernel -p params
+      Run a single kernel with command line parameters.
+
+    micprun [-v level] [-o outdir] [-t outtag] [-x offload]* [-d device] [-e plugin] [-k kernels] [-c category]
+      Run on all or a subset of the kernels with parameter category.
+
+    micprun [-v level] [-o outdir] [-t outtag] [-x offload]* [-d device] [-e plugin] [-k kernels] [-c category] [-m margin] -r pickle
+      Repeat a previously executed run and compare results.
+
+    * Command line option only available for Intel(R) Xeon Phi(TM) X100/X200 Coprocessors.
+
+DESCRIPTION
+    Runs the micperf workloads, prints rolled up statistics, plots
+    results and can compare results to previous runs.  When run with
+    -o the resulting .pkl file can be used with the other micp
+    applications (micpinfo, micpprint, micpcsv, micpplot).
+
+OPTIONS
+    -k kernel
+       Specifies the name of the kernel to be run. Multiple kernels
+       can be specified separated by ":" e.g "-k dgemm:sgemm". On
+       knl/knc coprocessors it defaults to all kernels available for
+       the offload method (also done when "-k all" is specified).
+       On knl processors offload methods are not supported kernels
+       are directly executed in the processor.
+       If "-k help" is specified then all available kernels are listed.
+    -D (Only for Intel(R) Xeon Phi(TM) Processors X200)
+       Memory selection, by default micprun will attempt to allocate
+       MCDRAM memory to execute the workloads, on failure (e.g. memory
+       mode set to Cache) micprun will continue with the execution but
+       using only DDR memory. -D forces micprun to use directly DDR memory
+       without performing any MCDRAM memory availability check. This option
+       only works in Flat mode as in cache mode MCDRAM is used transparently.
+    -p params
+       Command line arguments to be passed to the kernel.  These can
+       be positional or --parameter value.  To find the argument
+       names, positional ordering and default values for a kernel
+       specify "-p --help".
+    -c category
+       Category of command line arguments to be used.  Defaults to
+       "optimal".  All kernels have an "optimal", "scaling" and "test"
+       parameter category.  The distributed kernels have three
+       additional categories: "scaling_quick", "optimal_quick",
+       "scaling_core".  The quick variants complete in less time but
+       may not be as high performance.  The "scaling_core" category
+       does a strong core scaling test where possible (rather than a
+       data scaling test).
+    -x method (Only for Intel(R) Xeon Phi(TM) X100/X200 Coprocessors)
+       Specifies the offload technique default is "native:scif",
+       options for the method are "native", "scif", "pragma", "coi",
+       or "myo".  Multiple offload methods can be specified separated
+       by ":" e.g. "-x native:scif:pragma"
+       On a Intel(R) Xeon Phi(TM) Processors X200 the kernels can NOT be
+       offloaded since there are no coprocessor(s) installed in the system,
+       in this case an error will be returned.
+    -d device (Only for Intel(R) Xeon Phi(TM) X100/X200 Coprocessors)
+       Enables the selection of the device used to run the workloads
+       in a multi-card system.  For a single card system, or to run on
+       the zero indexed device, -d is not required.  The parameter
+       given is the zero based card index, resolvable host name or an
+       IP address.
+    -v level
+       Level of detail given in the report: 0 raw output to standard
+       out, 1 reprints rolled up data to standard out, 2 creates
+       plots, 3 plots all of the kernels onto a single graph if
+       possible.  Defaults to 0 unless -r is given, then defaults to
+       1.
+    -o outdir
+       Specify a directory in which to create output files.  If not
+       specified then no files are created and plots are displayed on
+       the screen.  If specified, a pickle file for comparison is
+       created, plots are written to png files and not displayed on
+       the screen.  If verbosity is set to 1 or higher then a comma
+       separated value (csv) file of rolled up statistics is created,
+       and -v 2 creates a csv file with all statistics.
+       When used on Intel(R) Xeon Phi(TM) Processors X200, the pickle
+       file name includes the word 'mcdram' or 'ddr' to indicate the
+       type of memory used to execute the workloads.
+    -t tag
+       Name used to identify the run in pickle file.  The tag is
+       included in the name of all output files.  Tags may contain
+       only alphanumeric characters underscores and dashes.  All
+       other characters are replaced with the dash character.  If -t
+       is not specified then a default tag is created.  This default
+       tag is an underscore separated list of the coprocessor SKU, the
+       mpss version, the offload method, the parameter category and
+       the device name.  If more than one offload method or parameter
+       category are given these are separated by a dashes.
+    -r pickle
+       Compare against a pickle file produced by running micprun
+       previously with -o specified.  If the -k, -p, -c or -x options
+       are not specified on the command line, then options specified
+       for these in the previous run are used.
+       Intel(R) Xeon Phi(TM) Processor X200 pickle files are not compatible
+       with Intel(R) Xeon Phi(TM) coprocessor X200 or Intel(R) Xeon Phi(TM)
+       coprocessor X100 pickle files. As offload methods differ among these
+       platforms micperf behavior is undefined.
+    -R tag
+       Compare against a tagged performance measurement included in the
+       distribution.  Running with "-R help" will print a list of
+       available tags.  If the -k, -p, -c or -x options are not
+       specified on the command line, then options specified for these
+       in the tagged run are used.
+    -m margin
+       When run with -r or -R, the -m option compares performance of
+       the run against the values stored in the pickle.  If the
+       performance of rolled statistics drops by a relative factor
+       larger than margin, then a failure message in gtest format is
+       printed and a micprun gives a non-zero return code.  If the
+       acceptable margin of error is 4% than margin should be
+       specified as 0.04.
+    -e plugin
+       Extend the available kernels with the plug-in package given.
+       Note that the plug-in package must be in a directory included
+       in the PYTHONPATH, and must contain an __init__.py file which
+       declares an __all__ attribute which lists all of the kernel
+       modules in the plug-in package.  Each kernel module must have a
+       class that inherits from micp.Kernel that has the same name as
+       the module that contains it.
+    --sudo
+       Allow to run benchmarks in privileged mode if they require it.
+       The executing user has to be added to the sudoers list.
+       Note that depending on system settings user may be prompted for
+       root password. In such case the micprun execution will halt until
+       the password is provided.
+
+EXIT STATUS
+    If a call to a kernel executable gives a non-zero exit code, this
+    exit code will be used as the exit code for micprun as well and a
+    message is written to standard error that reads:
+
+    ERROR:  Command 'COMMAND' returned non-zero exit status VALUE
+
+    Otherwise, the following table defines the return codes:
+
+    0    No error
+    1    Unhandled python exception
+    2    Command line parse error
+    3    File I/O error
+    88   Performance regression error
+    89   MPSS service not available error
+    90   Kernel or offload lookup error
+    91   Linpack kernel could not be executed (missing dependencies).
+    127  Missing shared object libraries error
+
+ENVIRONMENT
+    Intel(R) Xeon Phi(TM) X100/X200 Coprocessors
+        INTEL_MPSS_USER (default host user ID)
+            If set this determines the user name for the login to the MIC
+            device.
+        INTEL_MPSS_SSH_KEY (default is OS dependent)
+            If set this determines the path to the private SSH key used to
+            log into the MIC device.
+        MIC_PERF_EXEC (default defined in micp.version)
+            If set the binary executables will be located assuming this is
+            path that contains the mic perf bin directory.  Host side
+            binaries are located in "$MIC_PERF_EXEC/x86_64" and device
+            binaries are located in "$MIC_PERF_EXEC/k1om".
+
+    Intel(R) Xeon Phi(TM) Processors X200 and Intel(R) Xeon Phi(TM) X100/X200 Coprocessors
+        MIC_PERF_DATA (default defined in micp.version)
+            If set the reference data located in this directory will be
+            used with the -R flag.
+
+EXAMPLES
+    Intel(R) Xeon Phi(TM) X100/X200 Coprocessors
+        micprun -k all -c optimal -x native -v 0
+            Equivalent to running without command line parameters (defaults).
+        micprun -k shoc_download:shoc_readback -x pragma:scif -v 3
+            Run the scaling test for shoc download and readback comparing pragma
+            against scif offload, reprint rolled up statistics, and plot
+            to screen.
+
+    Intel(R) Xeon Phi(TM) Processors X200
+        micprun -k all -c optimal -v 0
+            Equivalent to running without command line parameters (defaults).
+        micprun -k sgemm:dgemm -v 3 -o .
+            Run the scaling test for sgemm and dgemm comparing results,
+            reprint rolled up statistics, and create graph in png format
+            in the current working directory.
+        micprun -D -k sgemm:dgemm:stream -o .
+            Run the sgemm, dgemm and stream kernels with DDR memory only
+            and creates a pickle file in the current working directory.
+        micprun -k hplinpack -c scaling -o .
+            Run the hplinpack kernel with MCDRAM memory (if available, DDR
+            memory otherwise) using the scaling parameter category, and creates
+            a pickle file in the current working directory.
+
+    Intel(R) Xeon Phi(TM) Processors X200 and Intel(R) Xeon Phi(TM) X100/X200 Coprocessors
+        micprun
+            Run all of the Linux native kernels with optimal parameters.
+        micprun -k sgemm -c scaling -v 1
+            Run the scaling test for Linux native sgemm and reprint rolled
+            up statistics.
+        micprun -k sgemm -c scaling -v 2 -o . -t example
+            Run the scaling test for sgemm, reprint rolled up statistics
+            and create graph in png format in the current working
+            directory.  This also produces micp_run_stats_example.pkl in
+            the current working directory.
+        micprun -r ./micp_run_stats_example.pkl -v 2
+            Rerun using parameters from run which produced the pickle
+            file, compare the rolled up statistics and create comparative
+            graphs on the screen.
+        micprun -k sgemm -p --help
+            Display the parameters and default values for the sgemm
+            kernel.
+        micprun -k sgemm -p '--n_num_thread 16'
+            Run the sgemm kernel with the default kernel parameters, except
+            for n_num_thread which is set to 16 instead of the optimal value.
+        micprun -k sgemm -p '4096 10 0 128 NN 4096 4096'
+            Run the sgemm kernel with positional parameters.
+        micprun  -k fio --sudo
+            Run the fio benchmark.
+
+COPYRIGHT
+    Copyright 2012-2017, Intel Corporation, All Rights Reserved.
+
+SEE ALSO
+    micpinfo, micpprint, micpplot, micpcsv
+
+"""
+
+import sys
+import os
+import cPickle
+import getopt
+import subprocess
+import re
+import datetime
+
+import micp.common as micp_common
+import micp.info as micp_info
+import micp.run as micp_run
+import micp.stats as micp_stats
+import micp.kernel as micp_kernel
+import micp.connect as micp_connect
+import micp.params as micp_params
+import micp.version as micp_version
+
+from micp.common import mp_print, CAT_ERROR, CAT_INFO
+
+HANDLED_EXCEPTIONS = (micp_kernel.NoExecutableError,
+                micp_params.UnknownParamError,
+                micp_params.InvalidParamTypeError,
+                micp_common.WindowsMicInfoError,
+                micp_common.NoExecutionPermission,
+                micp_kernel.SelfCheckError,
+                micp_stats.PerfRegressionError,
+                micp_common.FactoryLookupError,
+                micp_common.PermissionDeniedError,
+                micp_common.MissingDependenciesError)
+
+MAX_VERBOSITY = 3
+VALID_CATEGORIES = ("optimal",
+                    "scaling",
+                    "test",
+                    "scaling_quick",
+                    "optimal_quick",
+                    "scaling_core")
+
+FOR_HELP_MESSAGE = 'For help run: {0} --help\n'.format(sys.argv[0])
+BAD_ARCH_MESSAGE = 'Micperf can only be executed on Intel(R) Xeon Phi(TM) \
+product family devices.'
+LOGFILE_CREATED_MESSAGE = 'Kernels output has been saved to file {}'
+
+if __name__ == '__main__':
+
+    if len(sys.argv) > 1 and (sys.argv[1] == '-h' or sys.argv[1] == '--help'):
+        print __doc__
+        sys.exit(micp_common.E_NO_ERROR)
+
+    if len(sys.argv) > 1 and (sys.argv[1] == '--version'):
+        import micp.version as micp_version
+        print micp_version.__version__
+        sys.exit(micp_common.E_NO_ERROR)
+    try:
+        opts, args = getopt.gnu_getopt(sys.argv[1:], 'k:v:o:p:c:t:r:R:m:d:e:D', ['sudo'])
+    except getopt.GetoptError as err:
+        mp_print(str(err), CAT_ERROR)
+        mp_print(FOR_HELP_MESSAGE, CAT_INFO)
+        sys.exit(micp_common.E_PARSE)
+
+    offMethod = ''
+    kernelNames = ''
+    paramCat = ''
+    verbLevel = ''
+    outDir = ''
+    kernelArgs = ''
+    tag = ''
+    compareResult = ''
+    compareTag = ''
+    margin = ''
+    device = ''
+    kernelPlugin = ''
+    use_ddr_on_knlsb = False   # by default use MCDRAM memory
+    sudo = False
+
+    argCounter = 1
+    for flag, val in opts:
+        if flag == '-k':
+            kernelNames = val
+        elif flag == '-v':
+            verbLevel = val
+        elif flag == '-o':
+            outDir = val
+        elif flag == '-p':
+            kernelArgs = val
+        elif flag == '-c':
+            paramCat = val
+        elif flag == '-t':
+            tag = val
+        elif flag == '-r':
+            compareResult = val
+        elif flag == '-R':
+            compareTag = val
+        elif flag == '-m':
+            margin = val
+        elif flag == '-d':
+            device = val
+        elif flag == '-e':
+            kernelPlugin = val
+        elif flag == '-D':
+            use_ddr_on_knlsb = True
+        elif flag == '--sudo':
+            sudo = True
+        else :
+            mp_print('Parsing command line, unknown flag {0}\n'.format(flag),
+                CAT_ERROR)
+            mp_print(FOR_HELP_MESSAGE, CAT_INFO)
+            sys.exit(micp_common.E_PARSE)
+
+        if not val or flag + val in sys.argv:
+            argCounter += 1
+        else:
+            argCounter += 2
+
+    # -D option is only valid on KNL Processors
+    if use_ddr_on_knlsb and micp_version.MIC_PERF_HOST_ARCH != 'x86_64_AVX512':
+        mp_print('Parsing command line, unknown flag -D.', CAT_ERROR)
+        mp_print(FOR_HELP_MESSAGE, CAT_INFO)
+        sys.exit(micp_common.E_PARSE)
+
+    if argCounter != len(sys.argv):
+        mp_print('Parsing command line, unused arguments.', CAT_ERROR)
+        mp_print(FOR_HELP_MESSAGE, CAT_INFO)
+        sys.exit(micp_common.E_PARSE)
+
+    if margin and not (compareTag or compareResult):
+        mp_print('-m option requires a pickle file (-r) or a tag (-R).',
+            CAT_ERROR)
+        mp_print(FOR_HELP_MESSAGE, CAT_INFO)
+        sys.exit(micp_common.E_PARSE)
+
+    if tag and not outDir:
+        mp_print('-t option requires to specify an output directory -o.',
+            CAT_ERROR)
+        mp_print(FOR_HELP_MESSAGE, CAT_INFO)
+        sys.exit(micp_common.E_PARSE)
+
+    number_of_kernels = len(kernelNames.split(':'))
+    if kernelArgs and number_of_kernels > 1:
+        error = ('-p option can only modify the parameters for a'
+                 ' single kernel, micprun received {0} kernels "{1}".')
+        mp_print(error.format(number_of_kernels, kernelNames), CAT_ERROR)
+        sys.exit(micp_common.E_PARSE)
+
+    if kernelArgs == 'help':
+        kernelArgs = '--help'
+
+    default_device = 'mic0'
+    offMethod = 'local'
+    default_device = '-1'
+
+    if not device:
+        device = default_device
+
+    if tag:
+        badChar = re.compile(r'[^\w.-]')
+        if badChar.findall(tag):
+            error_msg = 'Replaced non-alphanumeric characters in tag.'
+            mp_print(error_msg, CAT_INFO)
+            mp_print('IN:\t{0}\n'.format(tag))
+            tag = badChar.sub('-', tag)
+            mp_print('OUT:\t{0}'.format(tag))
+
+    if outDir:
+        try:
+            testFile = os.path.join(outDir, 'deleteme')
+            fid = open(testFile,'w')
+            fid.close()
+            os.remove(testFile)
+        except IOError as err:
+            error_msg = ('Unable to create a test file in output directory'
+                        '-o option must be a writable directory.')
+            mp_print(error_msg, CAT_ERROR)
+            sys.exit(micp_common.E_IO)
+
+    try:
+        devIdx = micp_connect.MPSSConnect(device).get_offload_index()
+        micp_info.Info(devIdx)
+    except (RuntimeError, micp_common.MissingDependenciesError) as err:
+        if 'No mic cores found' in err.__str__() or 'Could not find IP address' in err.__str__():
+            mp_print(str(err), CAT_ERROR)
+            mp_print('Make sure that the MPSS service has been started.')
+            sys.exit(micp_common.E_MPSS_NA)
+        elif type(err) is micp_common.MissingDependenciesError:
+            mp_print(str(err), CAT_ERROR)
+            sys.exit(err.micp_exit_code())
+        raise
+    except micp_connect.GetOffloadIndexError:
+        error_msg = ('Unable to establish an SSH connection with the coprocessor. '
+                    'Please make sure SSH access for the coprocessor has been '
+                    'configured as described in the documentation.')
+        mp_print(error_msg, CAT_ERROR)
+        sys.exit(micp_common.E_EXCEPT)
+
+    # set MCDRAM/DDR memory use policy according to the given command line arguments
+    if micp_common.is_selfboot_platform():
+        micp_info.Info().set_use_only_ddr_memory(use_ddr_on_knlsb)
+
+    if compareTag:
+        scs = micp_stats.StatsCollectionStore()
+        if compareTag == 'help':
+            allTags = scs.stored_tags()
+            if allTags:
+                micp_common.exit_application('\n'.join(allTags), 0)
+            else:
+                micp_common.exit_application(micp_common.NO_REFERENCE_TAGS_ERROR, 3)
+
+        compareResult = scs.get_by_tag(compareTag)
+        if compareResult is None:
+            mp_print('Could not find reference tag {} in store.'.format(compareTag),
+                CAT_ERROR)
+            sys.exit(micp_common.E_IO)
+        if compareTag != compareResult.tag:
+            mp_print('Matching tag: {}'.format(compareResult.tag), CAT_INFO)
+
+    elif compareResult:
+        try:
+            compareResult = cPickle.load(open(compareResult, 'rb'))
+        except IOError as err:
+            err_msg = 'Could not open input reference file for reading.'
+            mp_print(str(err), CAT_ERROR)
+            mp_print(err_msg)
+            sys.exit(micp_common.E_IO)
+
+    # validate if category is valid
+    if paramCat and paramCat not in VALID_CATEGORIES:
+        mp_print("Invalid category '{}'.".format(paramCat), CAT_ERROR)
+        mp_print("Valid categories are:")
+        mp_print('\t' + "\n\t".join(VALID_CATEGORIES), wrap=False)
+        mp_print(FOR_HELP_MESSAGE, CAT_INFO)
+        sys.exit(micp_common.E_PARSE)
+
+    if not kernelArgs and not paramCat:
+        if not compareResult:
+            paramCat = 'optimal'
+        else:
+            paramCat = compareResult.runArgs['paramCat']
+            kernelArgs = compareResult.runArgs['kernelArgs']
+
+    if not kernelNames:
+        if not compareResult:
+            kernelNames = 'all'
+        else:
+            kernelNames = compareResult.runArgs['kernelNames']
+
+    if not offMethod:
+        if not compareResult:
+            offMethod = 'native:scif'
+        else:
+            offMethod = compareResult.runArgs['offMethod']
+
+    # if given validate verbosity level is correct, otherwise set it to default value
+    if not verbLevel:
+        if not compareResult:
+            verbLevel = '0'
+        else:
+            verbLevel = '1'
+    else:
+        if not verbLevel.isdigit() or int(verbLevel) > MAX_VERBOSITY:
+            err = 'Verbosity level (-v) should be an integer between 0 and {0}.'
+            mp_print(err.format(MAX_VERBOSITY), CAT_ERROR)
+            mp_print(FOR_HELP_MESSAGE, CAT_INFO)
+            sys.exit(micp_common.E_PARSE)
+
+    logFileName = None
+    if all('help' not in arg for arg in kernelArgs):
+        suffix = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        logFileName = "micp_run_log_" + suffix + ".log"
+
+    try:
+        exit_code = micp_run.run(kernelNames, offMethod, paramCat, kernelArgs,
+                        device, verbLevel, outDir, tag, compareResult, margin,
+                        kernelPlugin, {}, sudo, logFileName)
+
+    except HANDLED_EXCEPTIONS as err:
+        mp_print(str(err), CAT_ERROR)
+        exit_code = err.micp_exit_code()
+    except subprocess.CalledProcessError as err:
+        mp_print(str(err), CAT_ERROR)
+        exit_code = err.returncode
+
+    # remove the logfile if no data was written
+    if os.path.exists(logFileName):
+        if os.stat(logFileName).st_size == 0:
+            os.remove(logFileName)
+        else:
+            mp_print('\n')
+            mp_print(LOGFILE_CREATED_MESSAGE.format(logFileName), CAT_INFO)
+
+    sys.exit(exit_code)

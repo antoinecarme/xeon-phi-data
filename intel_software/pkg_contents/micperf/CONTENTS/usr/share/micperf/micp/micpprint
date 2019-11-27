@@ -1,0 +1,131 @@
+#! /usr/bin/python
+#
+# Copyright 2012-2017, Intel Corporation, All Rights Reserved.
+#
+# This software is supplied under the terms of a license
+# agreement or nondisclosure agreement with Intel Corp.
+# and may not be copied or disclosed except in accordance
+# with the terms of that agreement.
+#
+#  Author:  Christopher M. Cantalupo
+#
+
+"""
+NAME
+    micpprint - Print the performance data from a pickle file.
+
+SYNOPSIS
+    micpprint -h | --help
+        Print this help message.
+
+    micpprint --version
+        Print the version.
+
+    micpprint -R help
+        Print tags of installed reference files.
+
+    micpprint pickle0 [pickle1] [pickle2] ...
+        Print the performance statistics from the pickle file(s).
+
+    micpprint -R tag [pickle0] [pickle1] [pickle2] ...
+        Print the performance statistics from installed reference data
+        and any pickle files listed.
+
+DESCRIPTION
+    Prints to standard output the performance data stored within a
+    pickle file(s) in human readable form.  Use micpcsv for a machine
+    parsable form.  The kernels and offload methods included in the
+    first file determine the kernel and offload methods that will be
+    printed, and if no files are listed then the first tag given will
+    determine these.
+
+    -R tag
+        Print installed reference data from the given tag.
+        mutilple reference tags can be selected by passing a colon
+        separated list.
+
+ENVIRONMENT
+    MIC_PERF_DATA (default defined in micp.version)
+        If set the reference data located in this directory will be
+        used with the -R flag.
+
+COPYRIGHT
+    Copyright 2012-2017, Intel Corporation, All Rights Reserved.
+
+"""
+
+import sys
+import cPickle
+import getopt
+
+import micp.stats as micp_stats
+import micp.common as micp_common
+
+if __name__ == '__main__':
+    if(len(sys.argv) > 1 and sys.argv[1] == '--version'):
+        import micp.version as micp_version
+        print micp_version.__version__
+        sys.exit(0)
+
+    try:
+        optList, pickleList = getopt.gnu_getopt(sys.argv[1:], 'hR:',
+                                        ['help', 'ref='])
+    except getopt.GetoptError as err:
+        sys.stderr.write('ERROR:  {0}\n'.format(err))
+        sys.stderr.write('        For help run: {0} --help\n'.format(sys.argv[0]))
+        sys.exit(2)
+
+    outDir = ''
+    refTagList = []
+    for opt, arg in optList:
+        if opt in ('-h', '--help'):
+            print __doc__
+            sys.exit(0)
+        elif opt in ('-R', '--ref'):
+            if arg == 'help':
+                store = micp_stats.StatsCollectionStore()
+                allTags = store.stored_tags()
+                if allTags:
+                    micp_common.exit_application('\n'.join(allTags), 0)
+                else:
+                    micp_common.exit_application(micp_common.NO_REFERENCE_TAGS_ERROR, 3)
+            refTagList = arg.split(':')
+        else:
+            sys.stderr.write('ERROR: Unhandled option {0}\n'.format(opt))
+            sys.stderr.write('For help run: {0} --help\n'.format(sys.argv[0]))
+            sys.exit(2)
+
+    if not pickleList and not refTagList:
+        sys.stderr.write('ERROR: No files or tags given\n')
+        sys.exit(2)
+
+    collection = None
+    if pickleList:
+        for fileName in pickleList:
+            try:
+                cc = cPickle.load(open(fileName, 'rb'))
+            except IOError:
+                error_msg = micp_common.NON_EXISTENT_FILE_ERROR.format(fileName)
+                micp_common.exit_application(error_msg, 3)
+
+            if not cc:
+                sys.stderr.write('ERROR: Could not find reference tag {0} in store\n'.format(tag))
+                sys.exit(3)
+            if collection:
+                collection.extend(cc)
+            else:
+                collection = cc
+
+    if refTagList:
+        store = micp_stats.StatsCollectionStore()
+        for tag in refTagList:
+            cc = store.get_by_tag(tag)
+            if not cc:
+                sys.stderr.write('ERROR: Could not find reference tag {0} in store\n'.format(tag))
+                sys.exit(3)
+            if collection:
+                collection.extend(cc)
+            else:
+                collection = cc
+
+    print collection

@@ -1,0 +1,17 @@
+#!/usr/bin/python
+# Copyright 2012-2017 Intel Corporation.
+# 
+# This software is supplied under the terms of a license agreement or
+# nondisclosure agreement with Intel Corporation and may not be copied
+# or disclosed except in accordance with the terms of that agreement.
+
+import sys
+
+# The actual value of this variable will be replaced during install from the Makefile
+SYSDIAG_DIR = "/usr/share/sysdiag"
+sys.path.append(SYSDIAG_DIR)
+
+import sys_diag
+
+sys.exit(sys_diag.main())
+
