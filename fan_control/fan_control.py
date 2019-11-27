@@ -84,11 +84,13 @@ def run():
         max_temp = max(l_temps)
         print("MAX_TEMP" , max_temp)
         percentage_of_max = get_interpolated_percentage(max_temp)
-        set_fan_speed(percentage_of_max)
+        set_fan_speed(percentage_of_max + 5)
         # wait for fans to stabilize !!!
         time.sleep( 1 )
         get_fan_speeds()
-        time.sleep( 30 )
+        lSeconds = 10
+        print("SLEEPING_FOR" , lSeconds , "seconds.")
+        time.sleep( lSeconds )
 
 
 run()
