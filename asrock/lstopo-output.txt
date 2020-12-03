@@ -1,0 +1,369 @@
+Machine (55GB total)
+  Package L#0
+    NUMANode L#0 (P#0 39GB)
+    NUMANode(MCDRAM) L#1 (P#1 16GB)
+    L2 L#0 (1024KB)
+      L1d L#0 (32KB) + L1i L#0 (32KB) + Core L#0
+        PU L#0 (P#0)
+        PU L#1 (P#64)
+        PU L#2 (P#128)
+        PU L#3 (P#192)
+      L1d L#1 (32KB) + L1i L#1 (32KB) + Core L#1
+        PU L#4 (P#1)
+        PU L#5 (P#65)
+        PU L#6 (P#129)
+        PU L#7 (P#193)
+    L2 L#1 (1024KB)
+      L1d L#2 (32KB) + L1i L#2 (32KB) + Core L#2
+        PU L#8 (P#2)
+        PU L#9 (P#66)
+        PU L#10 (P#130)
+        PU L#11 (P#194)
+      L1d L#3 (32KB) + L1i L#3 (32KB) + Core L#3
+        PU L#12 (P#3)
+        PU L#13 (P#67)
+        PU L#14 (P#131)
+        PU L#15 (P#195)
+    L2 L#2 (1024KB)
+      L1d L#4 (32KB) + L1i L#4 (32KB) + Core L#4
+        PU L#16 (P#4)
+        PU L#17 (P#68)
+        PU L#18 (P#132)
+        PU L#19 (P#196)
+      L1d L#5 (32KB) + L1i L#5 (32KB) + Core L#5
+        PU L#20 (P#5)
+        PU L#21 (P#69)
+        PU L#22 (P#133)
+        PU L#23 (P#197)
+    L2 L#3 (1024KB)
+      L1d L#6 (32KB) + L1i L#6 (32KB) + Core L#6
+        PU L#24 (P#6)
+        PU L#25 (P#70)
+        PU L#26 (P#134)
+        PU L#27 (P#198)
+      L1d L#7 (32KB) + L1i L#7 (32KB) + Core L#7
+        PU L#28 (P#7)
+        PU L#29 (P#71)
+        PU L#30 (P#135)
+        PU L#31 (P#199)
+    L2 L#4 (1024KB)
+      L1d L#8 (32KB) + L1i L#8 (32KB) + Core L#8
+        PU L#32 (P#8)
+        PU L#33 (P#72)
+        PU L#34 (P#136)
+        PU L#35 (P#200)
+      L1d L#9 (32KB) + L1i L#9 (32KB) + Core L#9
+        PU L#36 (P#9)
+        PU L#37 (P#73)
+        PU L#38 (P#137)
+        PU L#39 (P#201)
+    L2 L#5 (1024KB)
+      L1d L#10 (32KB) + L1i L#10 (32KB) + Core L#10
+        PU L#40 (P#10)
+        PU L#41 (P#74)
+        PU L#42 (P#138)
+        PU L#43 (P#202)
+      L1d L#11 (32KB) + L1i L#11 (32KB) + Core L#11
+        PU L#44 (P#11)
+        PU L#45 (P#75)
+        PU L#46 (P#139)
+        PU L#47 (P#203)
+    L2 L#6 (1024KB)
+      L1d L#12 (32KB) + L1i L#12 (32KB) + Core L#12
+        PU L#48 (P#12)
+        PU L#49 (P#76)
+        PU L#50 (P#140)
+        PU L#51 (P#204)
+      L1d L#13 (32KB) + L1i L#13 (32KB) + Core L#13
+        PU L#52 (P#13)
+        PU L#53 (P#77)
+        PU L#54 (P#141)
+        PU L#55 (P#205)
+    L2 L#7 (1024KB)
+      L1d L#14 (32KB) + L1i L#14 (32KB) + Core L#14
+        PU L#56 (P#14)
+        PU L#57 (P#78)
+        PU L#58 (P#142)
+        PU L#59 (P#206)
+      L1d L#15 (32KB) + L1i L#15 (32KB) + Core L#15
+        PU L#60 (P#15)
+        PU L#61 (P#79)
+        PU L#62 (P#143)
+        PU L#63 (P#207)
+    L2 L#8 (1024KB)
+      L1d L#16 (32KB) + L1i L#16 (32KB) + Core L#16
+        PU L#64 (P#16)
+        PU L#65 (P#80)
+        PU L#66 (P#144)
+        PU L#67 (P#208)
+      L1d L#17 (32KB) + L1i L#17 (32KB) + Core L#17
+        PU L#68 (P#17)
+        PU L#69 (P#81)
+        PU L#70 (P#145)
+        PU L#71 (P#209)
+    L2 L#9 (1024KB)
+      L1d L#18 (32KB) + L1i L#18 (32KB) + Core L#18
+        PU L#72 (P#18)
+        PU L#73 (P#82)
+        PU L#74 (P#146)
+        PU L#75 (P#210)
+      L1d L#19 (32KB) + L1i L#19 (32KB) + Core L#19
+        PU L#76 (P#19)
+        PU L#77 (P#83)
+        PU L#78 (P#147)
+        PU L#79 (P#211)
+    L2 L#10 (1024KB)
+      L1d L#20 (32KB) + L1i L#20 (32KB) + Core L#20
+        PU L#80 (P#20)
+        PU L#81 (P#84)
+        PU L#82 (P#148)
+        PU L#83 (P#212)
+      L1d L#21 (32KB) + L1i L#21 (32KB) + Core L#21
+        PU L#84 (P#21)
+        PU L#85 (P#85)
+        PU L#86 (P#149)
+        PU L#87 (P#213)
+    L2 L#11 (1024KB)
+      L1d L#22 (32KB) + L1i L#22 (32KB) + Core L#22
+        PU L#88 (P#22)
+        PU L#89 (P#86)
+        PU L#90 (P#150)
+        PU L#91 (P#214)
+      L1d L#23 (32KB) + L1i L#23 (32KB) + Core L#23
+        PU L#92 (P#23)
+        PU L#93 (P#87)
+        PU L#94 (P#151)
+        PU L#95 (P#215)
+    L2 L#12 (1024KB)
+      L1d L#24 (32KB) + L1i L#24 (32KB) + Core L#24
+        PU L#96 (P#24)
+        PU L#97 (P#88)
+        PU L#98 (P#152)
+        PU L#99 (P#216)
+      L1d L#25 (32KB) + L1i L#25 (32KB) + Core L#25
+        PU L#100 (P#25)
+        PU L#101 (P#89)
+        PU L#102 (P#153)
+        PU L#103 (P#217)
+    L2 L#13 (1024KB)
+      L1d L#26 (32KB) + L1i L#26 (32KB) + Core L#26
+        PU L#104 (P#26)
+        PU L#105 (P#90)
+        PU L#106 (P#154)
+        PU L#107 (P#218)
+      L1d L#27 (32KB) + L1i L#27 (32KB) + Core L#27
+        PU L#108 (P#27)
+        PU L#109 (P#91)
+        PU L#110 (P#155)
+        PU L#111 (P#219)
+    L2 L#14 (1024KB)
+      L1d L#28 (32KB) + L1i L#28 (32KB) + Core L#28
+        PU L#112 (P#28)
+        PU L#113 (P#92)
+        PU L#114 (P#156)
+        PU L#115 (P#220)
+      L1d L#29 (32KB) + L1i L#29 (32KB) + Core L#29
+        PU L#116 (P#29)
+        PU L#117 (P#93)
+        PU L#118 (P#157)
+        PU L#119 (P#221)
+    L2 L#15 (1024KB)
+      L1d L#30 (32KB) + L1i L#30 (32KB) + Core L#30
+        PU L#120 (P#30)
+        PU L#121 (P#94)
+        PU L#122 (P#158)
+        PU L#123 (P#222)
+      L1d L#31 (32KB) + L1i L#31 (32KB) + Core L#31
+        PU L#124 (P#31)
+        PU L#125 (P#95)
+        PU L#126 (P#159)
+        PU L#127 (P#223)
+    L2 L#16 (1024KB)
+      L1d L#32 (32KB) + L1i L#32 (32KB) + Core L#32
+        PU L#128 (P#32)
+        PU L#129 (P#96)
+        PU L#130 (P#160)
+        PU L#131 (P#224)
+      L1d L#33 (32KB) + L1i L#33 (32KB) + Core L#33
+        PU L#132 (P#33)
+        PU L#133 (P#97)
+        PU L#134 (P#161)
+        PU L#135 (P#225)
+    L2 L#17 (1024KB)
+      L1d L#34 (32KB) + L1i L#34 (32KB) + Core L#34
+        PU L#136 (P#34)
+        PU L#137 (P#98)
+        PU L#138 (P#162)
+        PU L#139 (P#226)
+      L1d L#35 (32KB) + L1i L#35 (32KB) + Core L#35
+        PU L#140 (P#35)
+        PU L#141 (P#99)
+        PU L#142 (P#163)
+        PU L#143 (P#227)
+    L2 L#18 (1024KB)
+      L1d L#36 (32KB) + L1i L#36 (32KB) + Core L#36
+        PU L#144 (P#36)
+        PU L#145 (P#100)
+        PU L#146 (P#164)
+        PU L#147 (P#228)
+      L1d L#37 (32KB) + L1i L#37 (32KB) + Core L#37
+        PU L#148 (P#37)
+        PU L#149 (P#101)
+        PU L#150 (P#165)
+        PU L#151 (P#229)
+    L2 L#19 (1024KB)
+      L1d L#38 (32KB) + L1i L#38 (32KB) + Core L#38
+        PU L#152 (P#38)
+        PU L#153 (P#102)
+        PU L#154 (P#166)
+        PU L#155 (P#230)
+      L1d L#39 (32KB) + L1i L#39 (32KB) + Core L#39
+        PU L#156 (P#39)
+        PU L#157 (P#103)
+        PU L#158 (P#167)
+        PU L#159 (P#231)
+    L2 L#20 (1024KB)
+      L1d L#40 (32KB) + L1i L#40 (32KB) + Core L#40
+        PU L#160 (P#40)
+        PU L#161 (P#104)
+        PU L#162 (P#168)
+        PU L#163 (P#232)
+      L1d L#41 (32KB) + L1i L#41 (32KB) + Core L#41
+        PU L#164 (P#41)
+        PU L#165 (P#105)
+        PU L#166 (P#169)
+        PU L#167 (P#233)
+    L2 L#21 (1024KB)
+      L1d L#42 (32KB) + L1i L#42 (32KB) + Core L#42
+        PU L#168 (P#42)
+        PU L#169 (P#106)
+        PU L#170 (P#170)
+        PU L#171 (P#234)
+      L1d L#43 (32KB) + L1i L#43 (32KB) + Core L#43
+        PU L#172 (P#43)
+        PU L#173 (P#107)
+        PU L#174 (P#171)
+        PU L#175 (P#235)
+    L2 L#22 (1024KB)
+      L1d L#44 (32KB) + L1i L#44 (32KB) + Core L#44
+        PU L#176 (P#44)
+        PU L#177 (P#108)
+        PU L#178 (P#172)
+        PU L#179 (P#236)
+      L1d L#45 (32KB) + L1i L#45 (32KB) + Core L#45
+        PU L#180 (P#45)
+        PU L#181 (P#109)
+        PU L#182 (P#173)
+        PU L#183 (P#237)
+    L2 L#23 (1024KB)
+      L1d L#46 (32KB) + L1i L#46 (32KB) + Core L#46
+        PU L#184 (P#46)
+        PU L#185 (P#110)
+        PU L#186 (P#174)
+        PU L#187 (P#238)
+      L1d L#47 (32KB) + L1i L#47 (32KB) + Core L#47
+        PU L#188 (P#47)
+        PU L#189 (P#111)
+        PU L#190 (P#175)
+        PU L#191 (P#239)
+    L2 L#24 (1024KB)
+      L1d L#48 (32KB) + L1i L#48 (32KB) + Core L#48
+        PU L#192 (P#48)
+        PU L#193 (P#112)
+        PU L#194 (P#176)
+        PU L#195 (P#240)
+      L1d L#49 (32KB) + L1i L#49 (32KB) + Core L#49
+        PU L#196 (P#49)
+        PU L#197 (P#113)
+        PU L#198 (P#177)
+        PU L#199 (P#241)
+    L2 L#25 (1024KB)
+      L1d L#50 (32KB) + L1i L#50 (32KB) + Core L#50
+        PU L#200 (P#50)
+        PU L#201 (P#114)
+        PU L#202 (P#178)
+        PU L#203 (P#242)
+      L1d L#51 (32KB) + L1i L#51 (32KB) + Core L#51
+        PU L#204 (P#51)
+        PU L#205 (P#115)
+        PU L#206 (P#179)
+        PU L#207 (P#243)
+    L2 L#26 (1024KB)
+      L1d L#52 (32KB) + L1i L#52 (32KB) + Core L#52
+        PU L#208 (P#52)
+        PU L#209 (P#116)
+        PU L#210 (P#180)
+        PU L#211 (P#244)
+      L1d L#53 (32KB) + L1i L#53 (32KB) + Core L#53
+        PU L#212 (P#53)
+        PU L#213 (P#117)
+        PU L#214 (P#181)
+        PU L#215 (P#245)
+    L2 L#27 (1024KB)
+      L1d L#54 (32KB) + L1i L#54 (32KB) + Core L#54
+        PU L#216 (P#54)
+        PU L#217 (P#118)
+        PU L#218 (P#182)
+        PU L#219 (P#246)
+      L1d L#55 (32KB) + L1i L#55 (32KB) + Core L#55
+        PU L#220 (P#55)
+        PU L#221 (P#119)
+        PU L#222 (P#183)
+        PU L#223 (P#247)
+    L2 L#28 (1024KB)
+      L1d L#56 (32KB) + L1i L#56 (32KB) + Core L#56
+        PU L#224 (P#56)
+        PU L#225 (P#120)
+        PU L#226 (P#184)
+        PU L#227 (P#248)
+      L1d L#57 (32KB) + L1i L#57 (32KB) + Core L#57
+        PU L#228 (P#57)
+        PU L#229 (P#121)
+        PU L#230 (P#185)
+        PU L#231 (P#249)
+    L2 L#29 (1024KB)
+      L1d L#58 (32KB) + L1i L#58 (32KB) + Core L#58
+        PU L#232 (P#58)
+        PU L#233 (P#122)
+        PU L#234 (P#186)
+        PU L#235 (P#250)
+      L1d L#59 (32KB) + L1i L#59 (32KB) + Core L#59
+        PU L#236 (P#59)
+        PU L#237 (P#123)
+        PU L#238 (P#187)
+        PU L#239 (P#251)
+    L2 L#30 (1024KB)
+      L1d L#60 (32KB) + L1i L#60 (32KB) + Core L#60
+        PU L#240 (P#60)
+        PU L#241 (P#124)
+        PU L#242 (P#188)
+        PU L#243 (P#252)
+      L1d L#61 (32KB) + L1i L#61 (32KB) + Core L#61
+        PU L#244 (P#61)
+        PU L#245 (P#125)
+        PU L#246 (P#189)
+        PU L#247 (P#253)
+    L2 L#31 (1024KB)
+      L1d L#62 (32KB) + L1i L#62 (32KB) + Core L#62
+        PU L#248 (P#62)
+        PU L#249 (P#126)
+        PU L#250 (P#190)
+        PU L#251 (P#254)
+      L1d L#63 (32KB) + L1i L#63 (32KB) + Core L#63
+        PU L#252 (P#63)
+        PU L#253 (P#127)
+        PU L#254 (P#191)
+        PU L#255 (P#255)
+  HostBridge
+    PCIBridge
+      PCI 01:00.0 (Ethernet)
+        Net "ens2f0"
+      PCI 01:00.1 (Ethernet)
+        Net "ens2f1"
+    PCI 00:11.4 (SATA)
+    PCIBridge
+      PCIBridge
+        PCI 04:00.0 (VGA)
+    PCI 00:1f.2 (SATA)
+      Block(Disk) "sdb"
+      Block(Disk) "sda"
